@@ -4,30 +4,36 @@ import React from "react";
 import { FillButton } from "../Buttons";
 import Image from "next/image";
 import { largeScreens } from "../MediaQueries";
-import useMediaQuery from "@/app/hooks/UseMediaQuery";
+import useMediaQuery from "@/app/[locale]/hooks/UseMediaQuery";
 
-export const MainBanner = () => {
-  const isAboveLargeScreens = useMediaQuery(largeScreens);
+interface Props {
+  title:string
+  description:string,
+  secondaryButtonLabel:string,
+  mainButtonLabel:string
+}
+
+export const MainBanner = ({title,description,secondaryButtonLabel,mainButtonLabel}:Props) => {
+  const isAboveLargeScreens = useMediaQuery(largeScreens); 
+  
 
   return (
     <section className="relative w-full min-h-[562px]  ">
       <div className="flex flex-col gap-[16px] lg:w-[65%] h-full pt-[50px] ">
         <h1 className="text-[#030852D9] font-semibold lg:text-[64px] md:text-[55px] sm:text-[40px] text-[30px]">
-          We understand the complexity of the Construction Business
+          {title}
         </h1>
         <p className="text-[#262B6A] md:text-[16px] text-[14px] font-medium">
-          Projects are unique, Sites are unique, Scale is variable, Workers
-          change, subcontractors change along with cost and timeline. Did we
-          miss anything? We have designed domo to handle all of these for you
-          and much more!
+          {description}
         </p>
       </div>
       <div className="pt-[32px] flex gap-[18px] items-center">
-        <FillButton color="green" label="Request Demo" onClick={() => {}} />
+        <FillButton color="green" label={mainButtonLabel} onClick={() => {}} />
         <h4 className="text-green font-medium md:text-[16px] text-[14px]">
-          Try it out
+          {secondaryButtonLabel}
         </h4>
       </div>
+      <div className="bg-3" />
       {isAboveLargeScreens && (
         <div className="absolute top-0 right-0 w-[702px] h-[562px] -z-[10]  ">
             <Image

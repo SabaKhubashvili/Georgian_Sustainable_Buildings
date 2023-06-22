@@ -21,13 +21,25 @@ body{
 }
 .bg-2{
     width: 40%;
-    height: 40%;
+    height: 35%;
     border-radius: 617px;
-    opacity: 0.80000001192092896;
+    opacity: 0.6;
     background: #F8924F;
     filter: blur(300px);
     top: -100px;
     left: 50%;
     position: absolute;
     z-index: -999;
+}
+.bg-3{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 59%;
+    height: 40%;
+    z-index: -99;
+    border-radius: 617px;
+    opacity: 2.5;
+    background: #AA80F9;
+    filter: blur(300px);
 }

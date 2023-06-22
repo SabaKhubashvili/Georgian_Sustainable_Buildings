@@ -23,8 +23,8 @@ module.exports = {
         Sf: ['var(--font-Sf_Pro)']
       },
       content:{
-        'blue-pattern':'url("../public/svg/Backgrounds/Blue-Pattern.svg")',
-        'dot-pattern':'url("../public/svg/Backgrounds/Dot-Pattern.svg")'
+        'blue-pattern':'url("../../public/svg/Backgrounds/Blue-Pattern.svg")',
+        'dot-pattern':'url("../../public/svg/Backgrounds/Dot-Pattern.svg")'
       }
     },
   },

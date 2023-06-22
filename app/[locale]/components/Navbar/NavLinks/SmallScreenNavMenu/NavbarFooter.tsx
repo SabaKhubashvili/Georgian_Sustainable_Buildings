@@ -1,4 +1,4 @@
-import { FillButton, TransparentButton } from '@/app/components/Buttons'
+import { FillButton, TransparentButton } from '@/app/[locale]/components/Buttons'
 
 
 export const NavbarFooter = () => {
