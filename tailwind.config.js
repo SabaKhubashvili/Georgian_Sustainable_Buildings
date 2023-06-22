@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -20,6 +21,10 @@ module.exports = {
       },
       fontFamily: {
         Sf: ['var(--font-Sf_Pro)']
+      },
+      content:{
+        'blue-pattern':'url("../public/svg/Backgrounds/Blue-Pattern.svg")',
+        'dot-pattern':'url("../public/svg/Backgrounds/Dot-Pattern.svg")'
       }
     },
   },

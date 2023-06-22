@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background: #FCFCFF;
+}
+
+.bg-1{
+    width: 40%;
+    height: 40%;
+    flex-shrink: 0;
+    border-radius: 562px;
+    opacity: 0.40000001192092896;
+    background: #00A578;
+    filter: blur(300px);
+    position: absolute;
+    top: -280px;
+    left: -280px;
+    z-index: -999;
+}
+.bg-2{
+    width: 40%;
+    height: 40%;
+    border-radius: 617px;
+    opacity: 0.80000001192092896;
+    background: #F8924F;
+    filter: blur(300px);
+    top: -100px;
+    left: 50%;
+    position: absolute;
+    z-index: -999;
+}
