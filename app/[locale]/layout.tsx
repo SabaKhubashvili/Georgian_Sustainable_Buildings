@@ -22,7 +22,7 @@ const Sf_Pro = localFont({
       weight: "600",
     },
     {
-      path: "../../public/fonts/Sf_Pro/sf-pro-text-Medium.ttf",
+      path: "../../public/fonts/Sf_Pro/sf-pro-text-medium.ttf",
       weight: "500",
     },
     {

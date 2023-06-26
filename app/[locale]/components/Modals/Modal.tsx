@@ -63,7 +63,7 @@ export const Modal = ({
         window.addEventListener('click',handleOutsideClick)
         return () => {window.removeEventListener('click',handleOutsideClick)}
     }
-  },[showModal])
+  },[showModal,disabled])
   
 
   if (!isOpen) {
