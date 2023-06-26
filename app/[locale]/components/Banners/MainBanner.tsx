@@ -18,7 +18,7 @@ export const MainBanner = ({title,description,secondaryButtonLabel,mainButtonLab
   
 
   return (
-    <section className="relative w-full min-h-[562px]  ">
+    <section className="relative w-full lg:min-h-[562px]  ">
       <div className="flex flex-col gap-[16px] lg:w-[65%] h-full pt-[50px] ">
         <h1 className="text-[#030852D9] font-semibold lg:text-[64px] md:text-[55px] sm:text-[40px] text-[30px]">
           {title}

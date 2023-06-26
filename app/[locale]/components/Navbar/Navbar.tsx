@@ -1,6 +1,6 @@
 'use client'
 
-import React,{useContext} from 'react'
+import React,{useContext, useEffect, useState} from 'react'
 import { Logo } from '../Images/Logo'
 import { BigScreenNavLinks,SmallScreenNavMenu } from './NavLinks'
 import { AuthButtons } from './AuthButtons/AuthButtons'
@@ -11,10 +11,27 @@ import { NavContext } from '../../providers/NavbarContextProvider'
 export const Navbar = () => {
   const isAboveLargeScreens = useMediaQuery(largeScreens);
   const NavbarContext = useContext(NavContext)
+  const [isTopOfPage,setIsTopOfPage] = useState<boolean>(true)
+
+  useEffect(()=>{
+    const handleScroll = () =>{
+      if(window.scrollY === 0){
+        setIsTopOfPage(true)
+      }else{
+        setIsTopOfPage(false)
+      }
+    }
+    window.addEventListener('scroll',handleScroll)
+    return () => window.addEventListener('scroll',handleScroll)
+  },[])
+
   
   return (
-        <nav className=' max-w-[1840px] mx-auto py-[30px] xl:px-[75px] lg:px-[60px] md:px-[50px] sm:px-[40px] px-[20px]
-        w-full left-0 right-0  flex justify-between items-center fixed'>
+        <nav className={` 
+        ${isTopOfPage ? 'bg-transparent' : 'bg-white'}
+        transition-colors duration-200
+        max-w-[1840px] mx-auto py-[30px] xl:px-[75px] lg:px-[60px] md:px-[50px] sm:px-[40px] px-[20px]
+        w-full left-0 right-0  flex justify-between items-center fixed z-[50]`}>
             <div className='lg:ml-0 ml-auto'>
               <Logo/>
             </div>

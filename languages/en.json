@@ -1,0 +1,85 @@
+{
+      "Navbar":{
+        "Links":{
+          "Home":"Home",
+          "About_us":"About us",
+          "Calculator":"Calculator"
+        },
+        "Auth":{
+          "Sign_In":"Sign in",
+          "Try":"Try it for free"
+        },
+        "Languages":{
+          "ge":"Georgian",
+          "en":"English"
+        }
+      },
+      "Banner":{
+        "Title":"We understand the complexity of the Construction Business",
+        "Description":"Projects are unique, Sites are unique, Scale is variable, Workers change, subcontractors change along with cost and timeline. Did we miss anything? We have designed domo to handle all of these for you and much more!",
+        "mainButtonLabel":"Request Demo",
+        "secondaryButtonLabel":"Try it out"
+      },
+      "AboutSustainability":{
+        "Title":"Keep regulators happy with enhanced compliance.",
+        "subTitle":"Construction projects spend more on worker comp fines than any other industry in the U.S. Reduce this exposure by accurately tracking.",
+        "information":{
+
+            "title1":"Lorem ipsum dolor sit amet, consectetur",
+            "subTitle1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at faucibus vitae libero tellus enim eros, tristique. Lorem aliquet nunc bibendum.",
+ 
+            "title2":"Lorem ipsum dolor sit amet, consectetur",
+            "subTitle2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at faucibus vitae libero tellus enim eros, tristique. Lorem aliquet nunc bibendum.",
+
+            "title3":"Lorem ipsum dolor sit amet, consectetur",
+            "subTitle3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at faucibus vitae libero tellus enim eros, tristique. Lorem aliquet nunc bibendum.",
+
+            "title4":"Lorem ipsum dolor sit amet, consectetur",
+            "subTitle4":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at faucibus vitae libero tellus enim eros, tristique. Lorem aliquet nunc bibendum."
+        },
+        "Learn_more":"Learn more"
+      },
+      "About_us":{
+        "title":"Save on labor costs with Contactless Clocking.",
+        "description":"Facial biometric clocks allow for the most accurate and super fast clocking experience. When there are no long lines to clock-in and out, workers comply more and you get accurate data. Manage labor costs more efficiently. Workers love interacting with FR Clocks. Build Employee trust and step into the future with Workerly! "
+      },
+      "Portfolio":{
+        "title":"One platform that does it all ...",
+        "description":"Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur "
+      },
+      "Footer":{
+        "newsLetterTitle":"Subscribe to our Future of Work Newsletter and learn more about modern digital workplaces",
+
+        "title1":"Georgian Sustainable Buildings",
+        "sec1title1":"About Us",
+        "sec1title2":"Carreer",
+        "sec1title3":"First of its kind Marketplace",
+        
+        
+        "title2":"Products",
+        "sec2title1":"Workforce Management",
+        "sec2title2":"Productivity & Communication",
+        "sec2title3":"HR Management",
+        "sec2title4":"Contingent Worker Platform",
+        
+        "title3":"Resources",
+        "sec3title1":"Blog",
+        "sec3title2":"Case Studies",
+        "sec3title3":"News"
+      },
+      "Modal":{
+        "registerTitle":"Registration",
+        "registerSubTitle":"Join our journey",
+        "registerActionLabel":"Registration",
+        "registerFooter":"Already have accaunt?",
+        "nameLabel":"Name",
+        "mailLabel":"Email",
+        "passwordLabel":"Password",
+
+
+        "loginTitle":"Log in",
+        "loginSubTitle":"Continue your journey",
+        "loginActionLabel":"Log in",
+        "loginFooter":"don&apos;t have accaunt?"
+      }
+  }

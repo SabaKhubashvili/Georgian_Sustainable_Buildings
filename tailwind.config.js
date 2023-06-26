@@ -24,7 +24,8 @@ module.exports = {
       },
       content:{
         'blue-pattern':'url("../../public/svg/Backgrounds/Blue-Pattern.svg")',
-        'dot-pattern':'url("../../public/svg/Backgrounds/Dot-Pattern.svg")'
+        'dot-pattern':'url("../../public/svg/Backgrounds/Dot-Pattern.svg")',
+        'dot-pattern-green':'url("../../public/svg/Backgrounds/Dot-Pattern-green.svg")',
       }
     },
   },

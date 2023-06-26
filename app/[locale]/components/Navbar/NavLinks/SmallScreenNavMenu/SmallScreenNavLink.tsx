@@ -16,7 +16,7 @@ export const SmallScreenNavLink = ({ label, to,icon }: Props) => {
   return (
   <Link href={to} className={`
     ${pathname === to ? 'text-darkpurple bg-[#EDEEF3]' : 'text-[#73779F]'}
-    font-semibold md:text-[16px] text-[14px] leading-[100%] flex gap-[10px] p-[5px] w-full rounded-[8px]
+    font-semibold md:text-[20px] text-[16px] leading-[100%] flex gap-[10px] p-[5px] w-full rounded-[8px]
   `}>
     {icon}
     <p>

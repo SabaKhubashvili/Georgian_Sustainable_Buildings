@@ -1,5 +1,6 @@
 'use client'
-import {useState,useContext} from 'react'
+
+import {useState,useContext,useEffect,useRef} from 'react'
 import { GeorgiaIcon, LanguageIcon, UsaIcon } from "@/public/svg/icons"
 import Link from 'next-intl/link'
 import { NavContext } from '../../providers/NavbarContextProvider'
@@ -7,10 +8,23 @@ import { NavContext } from '../../providers/NavbarContextProvider'
 
 export const LanguageDropdown = () => {
     const [isToggled,setIsToggled] = useState<boolean>(false)
+    const dropdownRef = useRef<HTMLDivElement>(null)
     const data = useContext(NavContext)
+    
+    useEffect(()=>{
+        if(isToggled){
+            const handleOutsideClick = (event:MouseEvent)=>{
+                if(dropdownRef.current && !dropdownRef.current.contains(event.target as Node)){
+                    setIsToggled(false)
+                }
+            }
+            window.addEventListener('click',handleOutsideClick)
+            return ()=> window.removeEventListener('click',handleOutsideClick)
+        }
+    },[isToggled])
 
   return (
-    <div className="relative">
+    <div className="relative" ref={dropdownRef}>
         <div className="w-6 cursor-pointer" onClick={()=>setIsToggled(prev=>!prev)}>
             <LanguageIcon/>
         </div>
