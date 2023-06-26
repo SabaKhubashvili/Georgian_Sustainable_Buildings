@@ -71,7 +71,7 @@ export const Modal = ({
   }
 
   return (
-    <section className="fixed inset-0 z-[100] w-full h-full flex justify-center items-center bg-neutral-900/75 outline-none overflow-y-auto">
+    <section className="fixed inset-0 z-[100] w-full h-full flex justify-center items-center bg-neutral-900/75 outline-none lg:overflow-y-auto">
       <div className="md:w-4/6 lg:w-3/6 xl:w-2/5 w-full my-6 mx-auto h-full md:h-auto">
         <div
           className={`
@@ -79,7 +79,7 @@ export const Modal = ({
         transition-all duration-300 h-full
         `}
         >
-          <div ref={modalRef} className="bg-white p-7 flex flex-col gap-[20px]"> 
+          <div ref={modalRef} className="bg-white p-7 flex flex-col gap-[20px] lg:h-fit h-full"> 
             <div className="flex justify-between">
               <div>
                 <h1 className="font-bold text-[21px] ">{title}</h1>

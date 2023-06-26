@@ -21,7 +21,7 @@ export const Footer = ({newsLetterTitle,content}:Props) => {
     <footer className='mt-[50px] bg-gradient-to-b from-[#E8F1FB] to-[#90b4db8c] pt-[224px]  rounded-t-[10%]'>
       <Container>
         <NewsLetter newsLetterTitle={newsLetterTitle} />
-        <section className='pt-[180px] flex justify-between'>
+        <section className='pt-[180px] flex justify-between lg:flex-row flex-col'>
           {content.map(singleCol=>(
 
             
