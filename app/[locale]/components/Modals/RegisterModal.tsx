@@ -6,7 +6,8 @@ import { MainTextInput } from "../Inputs/MainTextInput";
 import {useForm,FieldValues,SubmitHandler} from 'react-hook-form'
 import { UseRegisterModal } from "@/app/hooks/UseRegisterModal";
 import { UseLoginModal } from "@/app/hooks/UseLoginModal";
-
+import axios from "axios";
+import {toast} from 'react-hot-toast'
 
 interface Props{
   title:string,
@@ -38,7 +39,8 @@ export const RegisterModal = ({
     handleSubmit,
     formState:{
       errors
-    }
+    },
+    reset
   } = useForm<FieldValues>({
     defaultValues:{
       username:'',  
@@ -48,25 +50,41 @@ export const RegisterModal = ({
   })
 
   const handleModalChange = () =>{
-    registerModal.onClose()
-    loginModal.onOpen()
+    if(!isLoading){
+      registerModal.onClose()
+      loginModal.onOpen()
+    }
   }
+
   
   const bodyContent = (
     <React.Fragment>
       <MainTextInput id='username' label={usernameLabel}register={register} errors={errors} required disabled={isLoading}/>
       <MainTextInput id='email' label={mailLabel} register={register} errors={errors} required disabled={isLoading}/>
-      <MainTextInput id='password' label={passwordLabel} register={register} errors={errors} required disabled={isLoading}/>
+      <MainTextInput id='password' type="password" label={passwordLabel} register={register} errors={errors} required disabled={isLoading}/>
     </React.Fragment>
   )
   const FooterContent = (
     <div>
-      {footerContent} <span className="text-purple cursor-pointer" onClick={handleModalChange}>Click here</span>
+      {footerContent} <span className="text-purple cursor-pointer" onClick={ handleModalChange}>Click here</span>
     </div>
   )
 
-  const onSubmit:SubmitHandler<FieldValues> = (data) =>{
-    console.log(data)
+  const onSubmit:SubmitHandler<FieldValues> = async(data) =>{
+    if(!isLoading){
+      setIsLoading(true)
+      try{
+        const response = await axios.post('/api/auth/register',data)
+        toast.success(response.data.message)
+        registerModal.onClose()
+        loginModal.onOpen()
+        reset()
+      }catch(error:any){
+        toast.error(error.response.data.message)
+      }finally{ 
+        setIsLoading(false)
+      }
+    }
   }
     
   

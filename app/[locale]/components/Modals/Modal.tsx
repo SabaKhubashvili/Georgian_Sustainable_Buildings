@@ -76,6 +76,7 @@ export const Modal = ({
         <div
           className={`
         ${showModal ? "translate-y-0" : "translate-y-[250%]"}
+        ${disabled && 'opacity-75'}
         transition-all duration-300 h-full
         `}
         >
@@ -92,7 +93,7 @@ export const Modal = ({
             <div className="my-[10px] h-[1px] w-full  bg-[#73779f6d]" />
             <div className="flex flex-col gap-[10px]">{body}</div>
             <div className="flex flex-col gap-[10px]">
-              <FillButton label={actionLabel} onClick={handleSubmit} color="blue" />
+              <FillButton label={actionLabel} onClick={handleSubmit} color="blue" disabled={disabled} />
               {footer}
             </div>
           </div>

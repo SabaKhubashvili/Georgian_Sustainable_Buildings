@@ -10,6 +10,7 @@ import { NavbarContextProvider } from "./providers/NavbarContextProvider";
 import { Footer } from "./components/Footer/Footer";
 import { LoginModal } from "./components/Modals/LoginModal";
 import { RegisterModal } from "./components/Modals/RegisterModal";
+import { Toaster } from "react-hot-toast";
 
 const Sf_Pro = localFont({
   src: [
@@ -111,6 +112,7 @@ export default function RootLayout({
     <html lang={locale}>
       <body className={Sf_Pro.className}>
         <ClientOnly>
+          <Toaster/>
           <LoginModal 
             title={modalt('loginTitle')}
             subTitle={modalt('loginSubTitle')} 

@@ -42,15 +42,17 @@ export const LoginModal = ({
     }
   })
   const handleModalChange = () =>{
-    registerModal.onOpen()
-    loginModal.onClose()
+    if(!isLoading){
+      registerModal.onOpen()
+      loginModal.onClose()
+    }
   }
   
   
   const bodyContent = (
     <React.Fragment>
       <MainTextInput id='email' label={mailLabel || "Email"} register={register} errors={errors} required disabled={isLoading}/>
-      <MainTextInput id='password' label={passwordLabel || "Password"} register={register} errors={errors} required disabled={isLoading}/>
+      <MainTextInput id='password' type="password" label={passwordLabel || "Password"} register={register} errors={errors} required disabled={isLoading}/>
     </React.Fragment>
   )
   const FooterContent = (
