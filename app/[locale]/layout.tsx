@@ -26,11 +26,11 @@ const Sf_Pro = localFont({
       weight: "500",
     },
     {
-      path: "../../public/fonts/Sf_Pro/sf-pro-text-Regular.ttf",
+      path: "../../public/fonts/Sf_Pro/sf-pro-text-regular.ttf",
       weight: "400",
     },
     {
-      path: "../../public/fonts/Sf_Pro/sf-pro-text-Light.ttf",
+      path: "../../public/fonts/Sf_Pro/sf-pro-text-light.ttf",
       weight: "300",
     },
   ],
