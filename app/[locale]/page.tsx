@@ -18,6 +18,7 @@ export default function Home() {
           description={bannerT('Description')}
           mainButtonLabel={bannerT('mainButtonLabel')}
           secondaryButtonLabel={bannerT('secondaryButtonLabel')}
+          learnMore={AboutSustainabilityT('Learn_more')}
         />
         <AboutSustainability
           title={AboutSustainabilityT('Title')}
@@ -30,6 +31,8 @@ export default function Home() {
           informationsubTitle3={AboutSustainabilityT('information.subTitle3')}
           informationTitle4={AboutSustainabilityT('information.title4')}
           informationsubTitle4={AboutSustainabilityT('information.subTitle4')}
+          informationTitle5={AboutSustainabilityT('information.title5')}
+          informationsubTitle5={AboutSustainabilityT('information.subTitle5')}
           learnMore={AboutSustainabilityT('Learn_more')}
         />
       </Container>

@@ -15,27 +15,26 @@
         }
       },
       "Banner":{
-        "Title":"We understand the complexity of the Construction Business",
-        "Description":"Projects are unique, Sites are unique, Scale is variable, Workers change, subcontractors change along with cost and timeline. Did we miss anything? We have designed domo to handle all of these for you and much more!",
+        "Title":"The energy efficiency of buildings is the guarantee of our sustainable future.        ",
+        "Description":"The term 'energy efficiency' is slowly gaining popularity in Georgia, becoming more and more relevant, especially after the publication of the Georgian government's draft law on energy-efficient buildings. And what is exactly 'energy efficiency'?        ",
         "mainButtonLabel":"Request Demo",
         "secondaryButtonLabel":"Try it out"
       },
       "AboutSustainability":{
-        "Title":"Keep regulators happy with enhanced compliance.",
-        "subTitle":"Construction projects spend more on worker comp fines than any other industry in the U.S. Reduce this exposure by accurately tracking.",
+        "Title":"Energy efficiency in practice. What is the goal of energy efficiency?",
+        "subTitle":"Often in Georgia, when we talk about the energy deficit, we bring as a necessary the construction of additional generation facilities to the fore, For some reason, we generally forget that energy demand can be met not only by increased supply but also by reduced demand.",
         "information":{
 
-            "title1":"Lorem ipsum dolor sit amet, consectetur",
-            "subTitle1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at faucibus vitae libero tellus enim eros, tristique. Lorem aliquet nunc bibendum.",
- 
-            "title2":"Lorem ipsum dolor sit amet, consectetur",
-            "subTitle2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at faucibus vitae libero tellus enim eros, tristique. Lorem aliquet nunc bibendum.",
+          "title1":"ენერგო ეფექტურობის გაზრდა",
+          "subTitle1":"By increasing the energy efficiency of the existing buildings, as well as the implementation of current and future constructions in compliance with high standards of energy efficiency, in the reality of Georgia, on the example of the EU countries, the total energy consumption can be reduced by approximately 10-15%. If we take into account that 46% of energy consumption in Georgia comes from buildings.  ",
 
-            "title3":"Lorem ipsum dolor sit amet, consectetur",
-            "subTitle3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at faucibus vitae libero tellus enim eros, tristique. Lorem aliquet nunc bibendum.",
+          "subTitle2":"Replace old incandescent bulbs with compact fluorescent (CFL) or LED lights. In the case of CFL and LED lighting, the cost is 75% lower and it lasts ten times longer.",
+          
+          "subTitle3":".   Replace the old water heater with a new energy-efficient device and reduce energy    consumption by 20%. The savings will cover the cost of the new device. ",
+      
+          "subTitle4":"Insulate the house by using building insulation. 50-55% of heat is lost through the roof and walls of the house.",
 
-            "title4":"Lorem ipsum dolor sit amet, consectetur",
-            "subTitle4":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at faucibus vitae libero tellus enim eros, tristique. Lorem aliquet nunc bibendum."
+          "subTitle5":"დაათბუნეთ სახლი სამშენებლო იზოლაციის გამოყენებით. სითბოს 50-55 % იკარგება სახლის სახურავიდან და კედლებიდან. "
         },
         "Learn_more":"Learn more"
       },
@@ -44,8 +43,8 @@
         "description":"Facial biometric clocks allow for the most accurate and super fast clocking experience. When there are no long lines to clock-in and out, workers comply more and you get accurate data. Manage labor costs more efficiently. Workers love interacting with FR Clocks. Build Employee trust and step into the future with Workerly! "
       },
       "Portfolio":{
-        "title":"One platform that does it all ...",
-        "description":"Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur "
+        "title":"What are exactly energy efficiency certificates?",
+        "description":"In the contemporary era, humanity is grappling with the profound ramifications of its ecological footprint on the environment and the consequent climate alterations. In response, there has been a concerted push towards adopting alternative energy sources. However, the efficacy of this transition hinges not only on the integration of such sources but also on the optimization of energy utilization to mitigate losses. This is precisely where the term 'energy efficiency' assumes paramount importance. Despite varying interpretations among experts, the fundamental reality remains unaltered: energy efficiency stands as a potent instrument in the battle against climate change and its deleterious environmental repercussions. In simple words, energy efficiency is about achieving more while using less. It's the art of optimizing how we use energy to accomplish our everyday tasks and maintain comfort. Imagine being able to keep your home cozy in winter and refreshingly cool in summer, all while using less power. That's energy efficiency in action – finding smart ways to reduce energy consumption without sacrificing the quality of your experience. Think how beneficial it is to achieve high energy efficiency standards, both for improving your economic conditions and for the planet. By being energy efficient, we not only reduce our energy bills but also reduce our impact on the environment. Between 30% - 40% of global warming comes from buildings, According to various sources,  the environmental impact of buildings is considered from construction to operation. From innovative technologies to smart habits, energy efficiency offers a world of opportunities to make our lives more sustainable and our and our children's futures brighter. Increasing energy efficiency in itself implies an improved living environment, improved infrastructure, and a higher level of quality of life. Energy efficiency and energy saving are not the same things, but they have a similar goal; 'Reducing energy consumption'. To put it in simple words: energy efficiency means using technologies to avoid or reduce energy losses so that we can still turn on the lights and use the appliances with the same load as we used before, with the difference that we will instead use much less energy compared to what we used before. As we mentioned above, energy efficiency means consuming less energy and maintaining or improving existing living conditions as a result of implementing certain measures. On the other hand, saving energy means reducing the demand for energy by stopping activities, turning off lights and appliances, or using them less, which means less energy consumption, although in this case, the existing living conditions may deteriorate. Therefore our main task is to use energy as much as possible in order to keep the environment intact and maximize energy efficiency, in such a way that we develop living conditions which means using energy intelligently and efficiently, and not the other way around."
       },
       "Footer":{
         "newsLetterTitle":"Subscribe to our Future of Work Newsletter and learn more about modern digital workplaces",

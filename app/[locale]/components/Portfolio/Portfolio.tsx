@@ -19,17 +19,17 @@ export const Portfolio = ({title,description}:Props) => {
   const remainingText = description.slice(slicedDescription.length);
 
   return (
-    <section className="lg:pt-[359px] pt-[300px] -mt-[150px] bg-[#00A5780D]">
+    <section id="portfolio" className="lg:pt-[359px] pt-[300px] -mt-[150px] bg-[#00A5780D]">
       <Container>
         <div
           className="w-full flex justify-between relative 
             before:content-dot-pattern-green  md:before:inline before:hidden before:absolute before:-right-10 before:-top-10 before:z-[-1] gap-[28px] lg:flex-row flex-col"
         >
           <div className="basis-auto w-full ">
-            <h1 className="text-darkpurple font-semibold leading-[140%] text-[36px]">
+            <h1 className="text-darkpurple font-semibold leading-[140%] xl:text-[36px] md:text-[30px] text-[20px]  ">
               {title}
             </h1>
-            <p className="pt-[40px] text-darkpurple text-[18px]">
+            <p className="pt-[40px] text-darkpurple sm:text-[18px] text-[16px]">
               {slicedDescription}
             </p>
             <div className="lg:pt-[71px] flex justify-between items-start gap-[20px] lg:flex-row flex-col ">

@@ -10,10 +10,11 @@ interface Props {
   title:string
   description:string,
   secondaryButtonLabel:string,
-  mainButtonLabel:string
+  mainButtonLabel:string,
+  learnMore:string
 }
 
-export const MainBanner = ({title,description,secondaryButtonLabel,mainButtonLabel}:Props) => {
+export const MainBanner = ({title,description,secondaryButtonLabel,mainButtonLabel,learnMore}:Props) => {
   const isAboveLargeScreens = useMediaQuery(largeScreens); 
   
 
@@ -25,6 +26,8 @@ export const MainBanner = ({title,description,secondaryButtonLabel,mainButtonLab
         </h1>
         <p className="text-[#262B6A] md:text-[16px] text-[14px] font-medium">
           {description}
+          <br />
+          <a href="#portfolio" className='text-green'>{learnMore}</a>
         </p>
       </div>
       <div className="pt-[32px] flex gap-[18px] items-center">
