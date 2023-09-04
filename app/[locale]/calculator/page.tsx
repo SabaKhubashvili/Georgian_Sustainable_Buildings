@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-import { MainDropdown } from "../components/Dropdowns/MainDropdown";
+import { MainDropdown } from "../components/Dropdowns/CalculatorDropdown";
 import { Container } from "../components/Container";
 import { Calculator } from "../components/Calculator/Calculator";
 
