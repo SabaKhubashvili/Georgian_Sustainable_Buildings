@@ -136,7 +136,7 @@ export default function RootLayout({
           <NavbarContextProvider data={navbarJson}>
             <Navbar />
           </NavbarContextProvider>
-          <div>{children}</div>
+          <main>{children}</main>
           <Footer newsLetterTitle={footert("newsLetterTitle")} content={footerContent} />
         </ClientOnly>
       </body>

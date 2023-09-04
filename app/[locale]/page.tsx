@@ -23,15 +23,10 @@ export default function Home() {
         <AboutSustainability
           title={AboutSustainabilityT('Title')}
           subTitle={AboutSustainabilityT('subTitle')}
-          informationTitle1={AboutSustainabilityT('information.title1')}
           informationsubTitle1={AboutSustainabilityT('information.subTitle1')}
-          informationTitle2={AboutSustainabilityT('information.title2')}
           informationsubTitle2={AboutSustainabilityT('information.subTitle2')}
-          informationTitle3={AboutSustainabilityT('information.title3')}
           informationsubTitle3={AboutSustainabilityT('information.subTitle3')}
-          informationTitle4={AboutSustainabilityT('information.title4')}
           informationsubTitle4={AboutSustainabilityT('information.subTitle4')}
-          informationTitle5={AboutSustainabilityT('information.title5')}
           informationsubTitle5={AboutSustainabilityT('information.subTitle5')}
           learnMore={AboutSustainabilityT('Learn_more')}
         />

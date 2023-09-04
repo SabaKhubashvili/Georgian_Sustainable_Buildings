@@ -34,7 +34,7 @@
       
           "subTitle4":"Insulate the house by using building insulation. 50-55% of heat is lost through the roof and walls of the house.",
 
-          "subTitle5":"დაათბუნეთ სახლი სამშენებლო იზოლაციის გამოყენებით. სითბოს 50-55 % იკარგება სახლის სახურავიდან და კედლებიდან. "
+          "subTitle5":"Insulate the house by using building insulation. 50-55% of heat is lost through the roof and walls of the house. "
         },
         "Learn_more":"Learn more"
       },
@@ -43,7 +43,7 @@
         "description":"Facial biometric clocks allow for the most accurate and super fast clocking experience. When there are no long lines to clock-in and out, workers comply more and you get accurate data. Manage labor costs more efficiently. Workers love interacting with FR Clocks. Build Employee trust and step into the future with Workerly! "
       },
       "Portfolio":{
-        "title":"What are exactly energy efficiency certificates?",
+        "title":"What are exactly energy efficiency certificates? ",
         "description":"In the contemporary era, humanity is grappling with the profound ramifications of its ecological footprint on the environment and the consequent climate alterations. In response, there has been a concerted push towards adopting alternative energy sources. However, the efficacy of this transition hinges not only on the integration of such sources but also on the optimization of energy utilization to mitigate losses. This is precisely where the term 'energy efficiency' assumes paramount importance. Despite varying interpretations among experts, the fundamental reality remains unaltered: energy efficiency stands as a potent instrument in the battle against climate change and its deleterious environmental repercussions. In simple words, energy efficiency is about achieving more while using less. It's the art of optimizing how we use energy to accomplish our everyday tasks and maintain comfort. Imagine being able to keep your home cozy in winter and refreshingly cool in summer, all while using less power. That's energy efficiency in action – finding smart ways to reduce energy consumption without sacrificing the quality of your experience. Think how beneficial it is to achieve high energy efficiency standards, both for improving your economic conditions and for the planet. By being energy efficient, we not only reduce our energy bills but also reduce our impact on the environment. Between 30% - 40% of global warming comes from buildings, According to various sources,  the environmental impact of buildings is considered from construction to operation. From innovative technologies to smart habits, energy efficiency offers a world of opportunities to make our lives more sustainable and our and our children's futures brighter. Increasing energy efficiency in itself implies an improved living environment, improved infrastructure, and a higher level of quality of life. Energy efficiency and energy saving are not the same things, but they have a similar goal; 'Reducing energy consumption'. To put it in simple words: energy efficiency means using technologies to avoid or reduce energy losses so that we can still turn on the lights and use the appliances with the same load as we used before, with the difference that we will instead use much less energy compared to what we used before. As we mentioned above, energy efficiency means consuming less energy and maintaining or improving existing living conditions as a result of implementing certain measures. On the other hand, saving energy means reducing the demand for energy by stopping activities, turning off lights and appliances, or using them less, which means less energy consumption, although in this case, the existing living conditions may deteriorate. Therefore our main task is to use energy as much as possible in order to keep the environment intact and maximize energy efficiency, in such a way that we develop living conditions which means using energy intelligently and efficiently, and not the other way around."
       },
       "Footer":{
@@ -80,5 +80,14 @@
         "loginSubTitle":"Continue your journey",
         "loginActionLabel":"Log in",
         "loginFooter":"dont have accaunt?"
+      },
+      "Calculator":{
+        "name":"Calculator",
+        "subTitle":"Here you can calculate your house sustainability",
+        "content":{
+          "type":"Type of home:", 
+          "insulation":"Do you have building Insulation:",
+          "material":"Building construction material: "
+        }
       }
   }
