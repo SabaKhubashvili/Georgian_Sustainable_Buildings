@@ -87,7 +87,14 @@
         "content":{
           "type":"Type of home:", 
           "insulation":"Do you have building Insulation:",
-          "material":"Building construction material: "
+          "material":"Building construction material: ",
+          "windowsAndDoors":"Windows and Doors:",
+          "heat":"What do you use to heat your home? ",
+          "heating":"Heating System:",
+          "cooling":"Cooling system: ",
+          "certificates":"Do you use appliances with energy-efficient certificates:",
+          "lighting":"Lighting:",
+          "percentage":"Percentage of the total energy consumed per year is renewable energy? "
         }
       }
   }

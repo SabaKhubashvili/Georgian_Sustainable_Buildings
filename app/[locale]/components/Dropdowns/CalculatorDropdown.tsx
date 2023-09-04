@@ -27,15 +27,15 @@ export const MainDropdown = ({
 
 
   return (
-    <div className='flex sm:flex-row flex-col gap-[10px] items-center w-full'>
-        <h4 className='text-lightPurple 2xl:text-[20px] md:text-[16px] sm:text-[15px] text-[13px]'>{label}</h4>
-        <div className='relative flex-grow'>
+    <div className='flex flex-col gap-[10px] items-center w-full'>
+        <h4 className='text-lightPurple 2xl:text-[18px] xl:text-[16px] md:text-[15px] sm:text-[14px] text-[12px] md:text-center text-start'>{label}</h4>
+        <div className='relative flex-grow w-full'>
             <div className='py-2 px-5 border-[1px] border-solid border-lightPurple
-             flex gap-[30px] justify-between cursor-pointer
+             flex gap-[30px] justify-between cursor-pointer w-full
             '
             onClick={()=>{setIsOpen(prev=>!prev)}}
             >
-                <p className=' select-none'>
+                <p className='select-none'>
                     {value || content[0].label}
                 </p>
                 <div className={`
@@ -48,7 +48,7 @@ export const MainDropdown = ({
             </div>
             {
                 isOpen && 
-                <div className='w-full absolute top-[42px] bg-white py-2 px-5'>
+                <div className='w-full absolute top-[42px] bg-white py-2 px-5 z-10'>
                     {
                         content.map(cont=>(
                             <h1 className='text-lightPurple text-[14px] cursor-pointer'

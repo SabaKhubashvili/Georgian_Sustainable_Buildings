@@ -1,13 +1,12 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-import { MainDropdown } from "../components/Dropdowns/CalculatorDropdown";
 import { Container } from "../components/Container";
 import { Calculator } from "../components/Calculator/Calculator";
 
 const Page = () => {
   const calculatorT = useTranslations("Calculator");
   const contentT = useTranslations("Calculator.content");
-  const keys = ['type'] as const
+  const keys = ['type','insulation','material','windowsAndDoors','heat','cooling','heating','certificates','lighting','percentage'] as const
   return (
     <Container>
       <div className="pt-[130px]">
