@@ -87,6 +87,24 @@ export const heat = [
         point: 5,
     },
 ]
+export const houseHeating = [
+    {
+        label: "Oil",
+        point: 2.5,
+    },
+    {
+        label: "Natural gas",
+        point: 6,
+    },
+    {
+        label: "Electricity",
+        point: 6.5 ,
+    },
+    {
+        label: "Biomass",
+        point: 4.5,
+    },
+]
 export const cooling = [
     {
         label: "Air Conditioning",

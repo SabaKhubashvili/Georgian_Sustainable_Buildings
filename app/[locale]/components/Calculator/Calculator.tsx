@@ -5,8 +5,10 @@ import { MainDropdown } from "../Dropdowns/CalculatorDropdown";
 import {
   cooling,
   heat,
+  houseHeating,
   insulation,
   lighting,
+  material,
   percentage,
   sertificates,
   types,
@@ -128,9 +130,11 @@ export const Calculator = ({ content }: Props) => {
     console.log('Total Points:', totalPoints);
   
   };
+  console.log(content);
+  
   return (
     <div className="pt-[70px] max-w-[1200px] mx-auto">
-      <div className="flex justify-between flex-wrap gap-y-[10px] md:flex-row flex-col ">
+      <div className="flex justify-center gap-x-4 flex-wrap gap-y-[10px] md:flex-row flex-col ">
         <div className="md:w-[46%]  flex items-end">
           <MainDropdown
             setValue={(value: string, points: number, type: keyof Values) =>
@@ -153,22 +157,25 @@ export const Calculator = ({ content }: Props) => {
             value={values.insulation.value}
           />
         </div>
-        {/* <div className="md:w-[46%]  flex items-end" >
+        { values.insulation.value === 'No' &&
+        
+          <div className="md:w-[46%]  flex items-end" >
           <MainDropdown
           setValue={(value: string,points:number,type:keyof Values) => updateValues(value,points,type)}
-          content={types}
-          label={content[3]}
+          content={material}
+          label={content[2]}
           type="material"
           value={values.material.value}
           />
-        </div> */}
+        </div>
+        }
         <div className="md:w-[46%]  flex items-end">
           <MainDropdown
             setValue={(value: string, points: number, type: keyof Values) =>
               updateValues(value, points, type)
             }
             content={windowsAndDoors}
-            label={content[4]}
+            label={content[3]}
             type="windowsAndDoors"
             value={values.windowsAndDoors.value}
           />
@@ -179,7 +186,7 @@ export const Calculator = ({ content }: Props) => {
               updateValues(value, points, type)
             }
             content={heat}
-            label={content[5]}
+            label={content[6]}
             type="heat"
             value={values.heat.value}
           />
@@ -189,10 +196,21 @@ export const Calculator = ({ content }: Props) => {
             setValue={(value: string, points: number, type: keyof Values) =>
               updateValues(value, points, type)
             }
-            content={cooling}
-            label={content[6]}
+            content={houseHeating}
+            label={content[4]}
             type="heating"
             value={values.heating.value}
+          />
+        </div>
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
+            }
+            content={cooling}
+            label={content[5]}
+            type="cooling"
+            value={values.cooling.value}
           />
         </div>
         <div className="md:w-[46%]  flex items-end">
