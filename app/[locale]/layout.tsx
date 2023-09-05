@@ -57,18 +57,18 @@ export default async function RootLayout({
     locale: string;
   };
 }) {
-  // const locale = useLocale();
-  // if (params.locale !== locale) {
-  //   redirect('/404')
-  // }
+  const locale = useLocale();
+  if (params.locale !== locale) {
+    redirect('/404')
+  }
 
 
-  // let messages;
-  // try {
-  //   messages = (await import(`../../languages/${locale}.json`)).default;
-  // } catch (error) {
-  //   redirect('/404')
-  // }
+  let messages;
+  try {
+    messages = (await import(`../../languages/${locale}.json`)).default;
+  } catch (error) {
+    redirect('/404')
+  }
 
   return (
     <html lang={''}>
