@@ -1,19 +1,19 @@
-// import { MainBanner } from "./components/Banners";
-// // import { useTranslations } from "next-intl";
-// import { Container } from "./components/Container";
-// import { AboutSustainability } from "./components/Sections/AbuotSustainability/AboutSustainability";
-// import { AboutUs } from "./components/Sections/AboutUs/AboutUs";
-// import { Portfolio } from "./components/Portfolio/Portfolio";
+import { MainBanner } from "./components/Banners";
+import { useTranslations } from "next-intl";
+import { Container } from "./components/Container";
+import { AboutSustainability } from "./components/Sections/AbuotSustainability/AboutSustainability";
+import { AboutUs } from "./components/Sections/AboutUs/AboutUs";
+import { Portfolio } from "./components/Portfolio/Portfolio";
 
 export default function Home() {
-  // const bannerT = useTranslations("Banner")
-  // const AboutSustainabilityT = useTranslations("AboutSustainability")
-  // const aboutUst = useTranslations("About_us")
-  // const portfolioT = useTranslations("Portfolio")
+  const bannerT = useTranslations("Banner")
+  const AboutSustainabilityT = useTranslations("AboutSustainability")
+  const aboutUst = useTranslations("About_us")
+  const portfolioT = useTranslations("Portfolio")
 
   return (
     <main className="pt-[150px]">
-      {/* <Container>
+      <Container>
         <MainBanner title={bannerT('Title')}
           description={bannerT('Description')}
           mainButtonLabel={bannerT('mainButtonLabel')}
@@ -38,7 +38,7 @@ export default function Home() {
       <Portfolio 
         title={portfolioT('title')}
         description={portfolioT('description')}
-      /> */}
+      />
     </main>
   )
 }
