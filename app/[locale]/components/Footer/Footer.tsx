@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import { NewsLetter } from "./NewsLetter/NewsLetter";
 import { Container } from "../Container";

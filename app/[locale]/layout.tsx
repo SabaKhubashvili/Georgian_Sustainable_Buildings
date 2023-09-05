@@ -78,7 +78,6 @@ export default async function RootLayout({
             <Toaster />
             <LoginModal/>
             <RegisterModal/>
-
             <div className="bg-1" />
             <div className="bg-2" />
               <Navbar />

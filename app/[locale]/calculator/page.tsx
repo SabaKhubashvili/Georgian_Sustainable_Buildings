@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import React from "react";
 import { Container } from "../components/Container";
 import { Calculator } from "../components/Calculator/Calculator";
