@@ -17,6 +17,7 @@ import {
 import { FillButton } from "../Buttons";
 import Icon from "../Icon";
 import WebsiteIcons from "@/public/svg/IconsObject";
+import { useTranslations } from "next-intl";
 
 interface Props {
   content: any;
@@ -138,7 +139,7 @@ export const Calculator = ({ content, errors, placeholders }: Props) => {
     },
     [values]
   );
-
+  const t = useTranslations('Calculator');
   const handleSubmit = () => {
     setFeedback('')
     const allValuesHaveLength = Object.values(values).every((item) => item.value.length > 0);

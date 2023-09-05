@@ -4,11 +4,7 @@ import React from 'react'
 import { BigScreenNavLink } from './BigScreenNavLink'
 
 interface Props{
-  data:{
-    home:string,
-    about:string,
-    calculator:string
-  }
+  data:any
 }
 
 export const BigScreenNavLinks = ({data}:Props) => {
@@ -16,9 +12,9 @@ export const BigScreenNavLinks = ({data}:Props) => {
   
   return (
     <div className='flex gap-[27px] items-center'>
-        <BigScreenNavLink label={data.home} to={'/'} />
-        <BigScreenNavLink label={data.about} to={'/about'} />
-        <BigScreenNavLink label={data.calculator} to={'/calculator'} />
+        <BigScreenNavLink label={data[0]} to={'/'} />
+        <BigScreenNavLink label={data[1]} to={'/about'} />
+        <BigScreenNavLink label={data[2]} to={'/calculator'} />
     </div>
   )
 }

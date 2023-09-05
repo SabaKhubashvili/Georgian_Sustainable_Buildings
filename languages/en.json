@@ -25,7 +25,7 @@
         "subTitle":"Often in Georgia, when we talk about the energy deficit, we bring as a necessary the construction of additional generation facilities to the fore, For some reason, we generally forget that energy demand can be met not only by increased supply but also by reduced demand.",
         "information":{
 
-          "title1":"ენერგო ეფექტურობის გაზრდა",
+          "title1":"Increase energy efficiency",
           "subTitle1":"By increasing the energy efficiency of the existing buildings, as well as the implementation of current and future constructions in compliance with high standards of energy efficiency, in the reality of Georgia, on the example of the EU countries, the total energy consumption can be reduced by approximately 10-15%. If we take into account that 46% of energy consumption in Georgia comes from buildings.  ",
 
           "subTitle2":"Replace old incandescent bulbs with compact fluorescent (CFL) or LED lights. In the case of CFL and LED lighting, the cost is 75% lower and it lasts ten times longer.",
@@ -96,18 +96,7 @@
           "lighting":"Lighting:",
           "percentage":"Percentage of the total energy consumed per year is renewable energy? "
         },
-        "placeholders":{
-          "type":"Enter house type", 
-          "insulation":"Enter Insulation:",
-          "material":"Enter building material",
-          "windowsAndDoors":"Enter windows and doors material",
-          "heat":"Enter what you use to heat house",
-          "heating":"Enter house heating system",
-          "cooling":"Enter house cooling system ",
-          "certificates":"Enter if you use energy-efficient certificates",
-          "lighting":"Enter house lighting",
-          "percentage":"Enter percentage of energy consumed a year "
-        },
+    
         "errors":{
           "required":"All fields are required"
         }

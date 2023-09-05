@@ -7,10 +7,10 @@ import { AuthButtons } from './AuthButtons/AuthButtons'
 import useMediaQuery from '@/app/[locale]/hooks/UseMediaQuery'
 import { largeScreens } from '../MediaQueries'
 import { NavContext } from '../../providers/NavbarContextProvider'
+import { useTranslations } from 'next-intl'
 
 export const Navbar = () => {
   const isAboveLargeScreens = useMediaQuery(largeScreens);
-  const NavbarContext = useContext(NavContext)
   const [isTopOfPage,setIsTopOfPage] = useState<boolean>(true)
 
   useEffect(()=>{
@@ -24,7 +24,11 @@ export const Navbar = () => {
     window.addEventListener('scroll',handleScroll)
     return () => window.addEventListener('scroll',handleScroll)
   },[])
-
+  const navbarLinksT = useTranslations('Navbar.Links')
+  const navbarAuthT = useTranslations('Navbar.Auth')
+  const linkKeys = ['Home','About_us','Calculator']
+  const authKeys = ['Sign_In','Try']
+  console.log(navbarLinksT('Home'));
   
   return (
         <nav className={` 
@@ -37,8 +41,8 @@ export const Navbar = () => {
             </div>
             { isAboveLargeScreens ?
               <React.Fragment>
-                  <BigScreenNavLinks data={NavbarContext.Links}/>
-                  <AuthButtons data={NavbarContext.Auth} />
+                  <BigScreenNavLinks data={linkKeys.map(key=>navbarLinksT(key))}/>
+                  <AuthButtons data={authKeys.map(key=>navbarAuthT(key))} />
               </React.Fragment>
               :
               <SmallScreenNavMenu/>
