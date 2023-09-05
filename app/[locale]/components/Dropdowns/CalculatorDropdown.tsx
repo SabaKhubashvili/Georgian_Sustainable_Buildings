@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Icon from '../Icon'
 import WebsiteIcons from '@/public/svg/IconsObject'
 import { Values } from '../Calculator/Calculator'
@@ -24,10 +24,24 @@ export const MainDropdown = ({
     setValue,
 }:Props) => {
     const [isOpen,setIsOpen] = useState(false)
+    const ref = useRef<HTMLDivElement>(null)
 
+    useEffect(()=>{
+        if(isOpen){
+            const handleOutsideClick = (e:MouseEvent) =>{
+                if(ref.current && !ref.current.contains(e.target as Node)){
+                    setIsOpen(false)
+                }
+            }
+
+            window.addEventListener('click',handleOutsideClick)
+
+            return () => window.removeEventListener('click',handleOutsideClick)
+        }
+    },[isOpen])
 
   return (
-    <div className='flex flex-col gap-[10px] items-center w-full'>
+    <div className='flex flex-col gap-[10px] items-center w-full' ref={ref}>
         <h4 className='text-lightPurple 2xl:text-[18px] xl:text-[16px] md:text-[15px] sm:text-[14px] text-[12px] md:text-center text-start'>{label}</h4>
         <div className='relative flex-grow w-full'>
             <div className='py-2 px-5 border-[1px] border-solid border-lightPurple
@@ -52,7 +66,12 @@ export const MainDropdown = ({
                     {
                         content.map(cont=>(
                             <h1 className='text-lightPurple text-[14px] cursor-pointer'
-                            onClick={()=>{setValue(cont.label,cont.point,type)}}
+                            onClick={()=>{
+                                if(value !== cont.label){
+                                    setValue(cont.label,cont.point,type)
+                                    setIsOpen(false)
+                                }
+                            }}
                             key={cont.label}
                             >{cont.label}</h1>
                         ))

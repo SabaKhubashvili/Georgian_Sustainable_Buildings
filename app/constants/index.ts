@@ -1,15 +1,11 @@
 export const types = [
   {
-    label: "House",
-    point: 10,
+    label: "Private house.",
+    point: 7,
   },
   {
-    label: "Private",
-    point: 15,
-  },
-  {
-    label: "Anoteher",
-    point: 20,
+    label: "Appartement",
+    point: 5.5,
   },
 ];
 
