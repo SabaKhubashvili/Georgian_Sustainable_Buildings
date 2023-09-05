@@ -84,7 +84,7 @@ export default async function LocaleLayout({
             <div className="bg-1" />
             <div className="bg-2" />
               {/* <Navbar /> */}
-            {/* <main>{children}</main> */}
+            <main>{children}</main>
             {/* <Footer/> */}
           </ClientOnly>
           saba
