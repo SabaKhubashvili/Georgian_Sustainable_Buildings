@@ -83,9 +83,9 @@ export default async function LocaleLayout({
             <RegisterModal/>
             <div className="bg-1" />
             <div className="bg-2" />
-              {/* <Navbar /> */}
+              <Navbar />
             <main>{children}</main>
-            {/* <Footer/> */}
+            <Footer/>
           </ClientOnly>
           saba
         </NextIntlClientProvider>
