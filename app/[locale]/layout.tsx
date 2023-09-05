@@ -3,14 +3,14 @@ import { redirect } from "next/navigation";
 
 import localFont from "next/font/local";
 
-// import "./globals.css";
-// import { ClientOnly } from "./components/ClientOnly";
-// import { Navbar } from "./components/Navbar/Navbar";
-// import { NavbarContextProvider } from "./providers/NavbarContextProvider";
-// import { Footer } from "./components/Footer/Footer";
-// import { LoginModal } from "./components/Modals/LoginModal";
-// import { RegisterModal } from "./components/Modals/RegisterModal";
-// import { Toaster } from "react-hot-toast";
+import "./globals.css";
+import { ClientOnly } from "./components/ClientOnly";
+import { Navbar } from "./components/Navbar/Navbar";
+import { NavbarContextProvider } from "./providers/NavbarContextProvider";
+import { Footer } from "./components/Footer/Footer";
+import { LoginModal } from "./components/Modals/LoginModal";
+import { RegisterModal } from "./components/Modals/RegisterModal";
+import { Toaster } from "react-hot-toast";
 
 
 export function generateStaticParams() {
@@ -77,7 +77,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {/* <ClientOnly>
+          {/* <ClientOnly> */}
             <Toaster />
             <LoginModal/>
             <RegisterModal/>
@@ -86,7 +86,7 @@ export default async function LocaleLayout({
               <Navbar />
             <main>{children}</main>
             <Footer/>
-          </ClientOnly> */}
+          {/* </ClientOnly> */}
           saba
         </NextIntlClientProvider>
       </body>
