@@ -77,16 +77,16 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {/* <ClientOnly> */}
+          <ClientOnly>
             <Toaster />
             <LoginModal/>
             <RegisterModal/>
             <div className="bg-1" />
             <div className="bg-2" />
-              <Navbar />
-            <main>{children}</main>
-            <Footer/>
-          {/* </ClientOnly> */}
+              {/* <Navbar /> */}
+            {/* <main>{children}</main> */}
+            {/* <Footer/> */}
+          </ClientOnly>
           saba
         </NextIntlClientProvider>
       </body>
