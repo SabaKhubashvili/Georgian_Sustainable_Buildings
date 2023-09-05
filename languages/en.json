@@ -95,6 +95,21 @@
           "certificates":"Do you use appliances with energy-efficient certificates:",
           "lighting":"Lighting:",
           "percentage":"Percentage of the total energy consumed per year is renewable energy? "
+        },
+        "placeholders":{
+          "type":"Enter house type", 
+          "insulation":"Enter Insulation:",
+          "material":"Enter building material",
+          "windowsAndDoors":"Enter windows and doors material",
+          "heat":"Enter what you use to heat house",
+          "heating":"Enter house heating system",
+          "cooling":"Enter house cooling system ",
+          "certificates":"Enter if you use energy-efficient certificates",
+          "lighting":"Enter house lighting",
+          "percentage":"Enter percentage of energy consumed a year "
+        },
+        "errors":{
+          "required":"All fields are required"
         }
       }
   }

@@ -8,6 +8,15 @@ const WebsiteIcons = {
             clipRule="evenodd"
             ></path>
         </svg>
+    `,
+    'Error_Icon':`
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25">
+    <path
+      stroke="#fff"
+      strokeWidth="1.2"
+      d="M12.5 16v-1.5m0-5.5v4m8-.5a8 8 0 11-16 0 8 8 0 0116 0z"
+    ></path>
+  </svg>
     `
 }
 

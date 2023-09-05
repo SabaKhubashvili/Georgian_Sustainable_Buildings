@@ -14,6 +14,7 @@ interface Props{
     }[],
     value?:string,
     setValue:(value:string,points:number,type:keyof Values)=>void,
+    placeholder?:string
 }
 
 export const MainDropdown = ({
@@ -22,6 +23,7 @@ export const MainDropdown = ({
     content,
     value,
     setValue,
+    placeholder
 }:Props) => {
     const [isOpen,setIsOpen] = useState(false)
     const ref = useRef<HTMLDivElement>(null)
@@ -41,16 +43,16 @@ export const MainDropdown = ({
     },[isOpen])
 
   return (
-    <div className='flex flex-col gap-[10px] items-center w-full' ref={ref}>
-        <h4 className='text-lightPurple 2xl:text-[18px] xl:text-[16px] md:text-[15px] sm:text-[14px] text-[12px] md:text-center text-start'>{label}</h4>
-        <div className='relative flex-grow w-full'>
+    <div className='flex flex-col gap-[10px] items-center w-full'>
+        <h4 className='text-lightPurple 2xl:text-[16px] xl:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] md:text-center text-start'>{label}</h4>
+        <div className='relative flex-grow w-full'  ref={ref}>
             <div className='py-2 px-5 border-[1px] border-solid border-lightPurple
              flex gap-[30px] justify-between cursor-pointer w-full
             '
             onClick={()=>{setIsOpen(prev=>!prev)}}
             >
-                <p className='select-none'>
-                    {value || content[0].label}
+                <p className='select-none text-gray-500 '>
+                    {value || placeholder || content[0].label}
                 </p>
                 <div className={`
                 ${isOpen && ' rotate-180'}
