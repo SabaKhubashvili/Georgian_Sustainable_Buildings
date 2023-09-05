@@ -1,9 +1,9 @@
-import { MainBanner } from "./components/Banners";
-// import { useTranslations } from "next-intl";
-import { Container } from "./components/Container";
-import { AboutSustainability } from "./components/Sections/AbuotSustainability/AboutSustainability";
-import { AboutUs } from "./components/Sections/AboutUs/AboutUs";
-import { Portfolio } from "./components/Portfolio/Portfolio";
+// import { MainBanner } from "./components/Banners";
+// // import { useTranslations } from "next-intl";
+// import { Container } from "./components/Container";
+// import { AboutSustainability } from "./components/Sections/AbuotSustainability/AboutSustainability";
+// import { AboutUs } from "./components/Sections/AboutUs/AboutUs";
+// import { Portfolio } from "./components/Portfolio/Portfolio";
 
 export default function Home() {
   // const bannerT = useTranslations("Banner")

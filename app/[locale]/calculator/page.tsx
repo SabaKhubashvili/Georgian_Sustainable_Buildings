@@ -1,7 +1,7 @@
+// import React from "react";
+// import { Container } from "../components/Container";
+// import { Calculator } from "../components/Calculator/Calculator";
 // import { useTranslations } from "next-intl";
-import React from "react";
-import { Container } from "../components/Container";
-import { Calculator } from "../components/Calculator/Calculator";
 
 const Page = () => {
   // const calculatorT = useTranslations("Calculator");
@@ -11,7 +11,7 @@ const Page = () => {
   // const keys = ['type','insulation','material','windowsAndDoors','heat','cooling','heating','certificates','lighting','percentage'] as const
   // const errorKeys = ['required']
   return (
-    <Container>
+    // <Container>
       <div className="pt-[130px]">
         <h1 className="text-center font-bold text-[37px] text-lightPurple uppercase">
           {/* {calculatorT("name")} */}
@@ -23,7 +23,7 @@ const Page = () => {
             placeholders={keys.map(key=>placeholderT(key))}
           /> */}
       </div>
-    </Container>
+    // </Container>
   );
 };
 
