@@ -80,7 +80,8 @@
           "loginTitle":"შესვლა",
           "loginSubTitle":"გააგრძელე",
           "loginActionLabel":"შესვლა",
-          "loginFooter":"ჯერ არ გაქვს აქაუნთი?"
+          "loginFooter":"ჯერ არ გაქვს აქაუნთი?",
+          "ClickHere":"დააჭირე აქ"
         },
         "Calculator":{
           "name":"კალკულატორი",

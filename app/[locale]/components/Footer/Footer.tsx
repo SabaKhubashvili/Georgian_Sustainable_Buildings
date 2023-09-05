@@ -32,6 +32,7 @@ export const Footer = ({}: Props) => {
     },
   ];
   const footerT = useTranslations("Footer");
+  
   return (
     <footer className="mt-[50px] bg-gradient-to-b from-[#E8F1FB] to-[#90b4db8c] pt-[224px] ">
       <Container>

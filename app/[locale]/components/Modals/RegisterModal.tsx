@@ -8,30 +8,15 @@ import { UseRegisterModal } from "@/app/hooks/UseRegisterModal";
 import { UseLoginModal } from "@/app/hooks/UseLoginModal";
 import axios from "axios";
 import {toast} from 'react-hot-toast'
-
-interface Props{
-  title:string,
-  subTitle:string
-  actionLabel:string,
-  footerContent:string,
-  mailLabel:string,
-  passwordLabel:string,
-  usernameLabel:string
-}
+import { useTranslations } from "next-intl";
 
 
-export const RegisterModal = ({
-  title,
-  subTitle,
-  actionLabel,
-  footerContent,
-  mailLabel,
-  passwordLabel,
-  usernameLabel
-}:Props) => {
+
+
+export const RegisterModal = () => {
   const registerModal = UseRegisterModal();
   const loginModal = UseLoginModal();
-
+  const modalT = useTranslations('Modal')
   const [isLoading,setIsLoading] = useState<boolean>(false)
 
   const{
@@ -59,14 +44,14 @@ export const RegisterModal = ({
   
   const bodyContent = (
     <React.Fragment>
-      <MainTextInput id='username' label={usernameLabel}register={register} errors={errors} required disabled={isLoading}/>
-      <MainTextInput id='email' label={mailLabel} register={register} errors={errors} required disabled={isLoading}/>
-      <MainTextInput id='password' type="password" label={passwordLabel} register={register} errors={errors} required disabled={isLoading}/>
+      <MainTextInput id='username' label={modalT('nameLabel')}register={register} errors={errors} required disabled={isLoading}/>
+      <MainTextInput id='email' label={modalT('mailLabel')} register={register} errors={errors} required disabled={isLoading}/>
+      <MainTextInput id='password' type="password" label={modalT('passwordLabel')} register={register} errors={errors} required disabled={isLoading}/>
     </React.Fragment>
   )
   const FooterContent = (
     <div>
-      {footerContent} <span className="text-purple cursor-pointer" onClick={ handleModalChange}>Click here</span>
+      {modalT('registerFooter')} <span className="text-purple cursor-pointer" onClick={handleModalChange}>{modalT('ClickHere')}</span>
     </div>
   )
 
@@ -92,13 +77,13 @@ export const RegisterModal = ({
     <Modal
       isOpen={registerModal.isOpen}
       onClose={() => registerModal.onClose()}
-      title={title}
-      subTitle={subTitle}
+      title={modalT('registerTitle')}
+      subTitle={modalT('registerSubTitle')}
       onSubmit={handleSubmit(onSubmit)}
       body={bodyContent}
       footer={FooterContent}
       disabled={isLoading}
-      actionLabel={actionLabel}
+      actionLabel={modalT('registerActionLabel')}
     />
   );
 };

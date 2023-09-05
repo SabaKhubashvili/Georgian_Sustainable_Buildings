@@ -28,7 +28,6 @@ export const Navbar = () => {
   const navbarAuthT = useTranslations('Navbar.Auth')
   const linkKeys = ['Home','About_us','Calculator']
   const authKeys = ['Sign_In','Try']
-  console.log(navbarLinksT('Home'));
   
   return (
         <nav className={` 

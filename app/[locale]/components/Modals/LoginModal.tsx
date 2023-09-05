@@ -6,24 +6,10 @@ import { Modal } from "./Modal";
 import { MainTextInput } from "../Inputs/MainTextInput";
 import {useForm,FieldValues,SubmitHandler} from 'react-hook-form'
 import { UseRegisterModal } from "@/app/hooks/UseRegisterModal";
+import { useTranslations } from "next-intl";
 
-interface Props{
-  title:string,
-  subTitle:string
-  actionLabel:string,
-  footerContent:string,
-  mailLabel?:string,
-  passwordLabel?:string
-}
 
-export const LoginModal = ({
-  title,
-  subTitle,
-  actionLabel,
-  footerContent,
-  mailLabel,
-  passwordLabel
-}:Props) => {
+export const LoginModal = () => {
   const loginModal = UseLoginModal();
   const registerModal = UseRegisterModal();
 
@@ -47,17 +33,17 @@ export const LoginModal = ({
       loginModal.onClose()
     }
   }
-  
+  const ModalT = useTranslations('Modal')
   
   const bodyContent = (
     <React.Fragment>
-      <MainTextInput id='email' label={mailLabel || "Email"} register={register} errors={errors} required disabled={isLoading}/>
-      <MainTextInput id='password' type="password" label={passwordLabel || "Password"} register={register} errors={errors} required disabled={isLoading}/>
+      <MainTextInput id='email' label={ModalT('mailLabel') || "Email"} register={register} errors={errors} required disabled={isLoading}/>
+      <MainTextInput id='password' type="password" label={ModalT('passwordLabel') || "Password"} register={register} errors={errors} required disabled={isLoading}/>
     </React.Fragment>
   )
   const FooterContent = (
     <div>
-      {footerContent} <span className="text-purple cursor-pointer" onClick={handleModalChange}>Click here</span>
+      {ModalT('loginFooter')} <span className="text-purple cursor-pointer" onClick={handleModalChange}>{ModalT('ClickHere')}</span>
     </div>
   )
 
@@ -70,13 +56,13 @@ export const LoginModal = ({
     <Modal
       isOpen={loginModal.isOpen}
       onClose={() => loginModal.onClose()}
-      title={title}
-      subTitle={subTitle}
+      title={ModalT('loginTitle')}
+      subTitle={ModalT('loginSubTitle')}
       onSubmit={handleSubmit(onSubmit)}
       body={bodyContent}
       footer={FooterContent}
       disabled={isLoading}
-      actionLabel={actionLabel}
+      actionLabel={ModalT('loginActionLabel')}
     />
   );
 };

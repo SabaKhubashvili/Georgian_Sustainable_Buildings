@@ -79,7 +79,8 @@
         "loginTitle":"Log in",
         "loginSubTitle":"Continue your journey",
         "loginActionLabel":"Log in",
-        "loginFooter":"dont have accaunt?"
+        "loginFooter":"dont have accaunt?",
+        "ClickHere":"ClickHere"
       },
       "Calculator":{
         "name":"Calculator",

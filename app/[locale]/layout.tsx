@@ -76,23 +76,8 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           <ClientOnly>
             <Toaster />
-            {/* <LoginModal
-              title={modalt("loginTitle")}
-              subTitle={modalt("loginSubTitle")}
-              actionLabel={modalt("loginActionLabel")}
-              footerContent={modalt("loginFooter")}
-              mailLabel={modalt("mailLabel")}
-              passwordLabel={modalt("passwordLabel")}
-            />
-            <RegisterModal
-              title={modalt("registerTitle")}
-              subTitle={modalt("registerSubTitle")}
-              actionLabel={modalt("registerActionLabel")}
-              footerContent={modalt("registerFooter")}
-              usernameLabel={modalt("nameLabel")}
-              mailLabel={modalt("mailLabel")}
-              passwordLabel={modalt("passwordLabel")}
-            /> */}
+            <LoginModal/>
+            <RegisterModal/>
 
             <div className="bg-1" />
             <div className="bg-2" />
