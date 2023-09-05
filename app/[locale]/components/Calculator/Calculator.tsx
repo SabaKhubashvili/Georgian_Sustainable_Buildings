@@ -19,11 +19,6 @@ import Icon from "../Icon";
 import WebsiteIcons from "@/public/svg/IconsObject";
 import { useTranslations } from "next-intl";
 
-interface Props {
-  content: any;
-  errors: any;
-  placeholders:any
-}
 export type Values = {
   houseType: {
     value: string;
@@ -67,7 +62,7 @@ export type Values = {
   };
 };
 
-export const Calculator = ({ content, errors, placeholders }: Props) => {
+export const Calculator = () => {
   const [points, setPoints] = useState(0);
   const [feedback, setFeedback] = useState<"error" | "success" | "">("");
   const [valuesFeedBacks,setValuesFeedBacks] = useState({
@@ -82,6 +77,9 @@ export const Calculator = ({ content, errors, placeholders }: Props) => {
     lighting: '',
     percentage: ''
   })
+  const placeholderT = useTranslations('Calculator.placeholders')
+  const keys = ['type','insulation','material','windowsAndDoors','heat','cooling','heating','certificates','lighting','percentage'] as const
+  const errorKeys = ['required']
   const [values, setValues] = useState<Values>({
     houseType: {
       value: "",
@@ -157,8 +155,6 @@ export const Calculator = ({ content, errors, placeholders }: Props) => {
       setFeedback('error')
     }
   };
-  
-  console.log(errors);
 
   return (
     <div className="pt-[70px] max-w-[1200px] mx-auto">

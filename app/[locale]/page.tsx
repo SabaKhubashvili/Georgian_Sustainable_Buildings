@@ -12,15 +12,10 @@ export default function Home() {
 
   return (
     <main className="pt-[150px]">
-      sabuka
-      {/* <Container>
-        <MainBanner title={bannerT('Title')}
-          description={bannerT('Description')}
-          mainButtonLabel={bannerT('mainButtonLabel')}
-          secondaryButtonLabel={bannerT('secondaryButtonLabel')}
-          learnMore={AboutSustainabilityT('Learn_more')}
-        />
-        <AboutSustainability
+        {/* //! Must redo */}
+       <Container>
+        <MainBanner/>
+        {/* <AboutSustainability
           title={AboutSustainabilityT('Title')}
           subTitle={AboutSustainabilityT('subTitle')}
           informationsubTitle1={AboutSustainabilityT('information.subTitle1')}
@@ -29,16 +24,16 @@ export default function Home() {
           informationsubTitle4={AboutSustainabilityT('information.subTitle4')}
           informationsubTitle5={AboutSustainabilityT('information.subTitle5')}
           learnMore={AboutSustainabilityT('Learn_more')}
-        />
+        /> */}
       </Container>
-      <AboutUs
+      {/* <AboutUs
         title={aboutUst('title')}
         description={aboutUst('description')}
       />
       <Portfolio 
         title={portfolioT('title')}
         description={portfolioT('description')}
-      /> */}
+      />  */}
     </main>
   )
 }

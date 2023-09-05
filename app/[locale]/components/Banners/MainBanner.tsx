@@ -5,35 +5,30 @@ import { FillButton } from "../Buttons";
 import Image from "next/image";
 import { largeScreens } from "../MediaQueries";
 import useMediaQuery from "@/app/[locale]/hooks/UseMediaQuery";
+import { useTranslations } from "next-intl";
 
-interface Props {
-  title:string
-  description:string,
-  secondaryButtonLabel:string,
-  mainButtonLabel:string,
-  learnMore:string
-}
 
-export const MainBanner = ({title,description,secondaryButtonLabel,mainButtonLabel,learnMore}:Props) => {
+export const MainBanner = () => {
   const isAboveLargeScreens = useMediaQuery(largeScreens); 
-  
+  const bannerT = useTranslations('Banner')
+  const AboutSustainabilityT = useTranslations('AboutSustainability')
 
   return (
     <section className="relative w-full lg:min-h-[562px]  ">
       <div className="flex flex-col gap-[16px] lg:w-[65%] h-full pt-[50px] ">
         <h1 className="text-[#030852D9] font-semibold lg:text-[64px] md:text-[55px] sm:text-[40px] text-[30px]">
-          {title}
+          {bannerT('Title')}
         </h1>
         <p className="text-[#262B6A] md:text-[16px] text-[14px] font-medium">
-          {description}
+        {bannerT('Description')}
           <br />
-          <a href="#portfolio" className='text-green'>{learnMore}</a>
+          <a href="#portfolio" className='text-green'>{AboutSustainabilityT('Learn_more')}</a>
         </p>
       </div>
       <div className="pt-[32px] flex gap-[18px] items-center">
-        <FillButton color="green" label={mainButtonLabel} onClick={() => {}} />
+        <FillButton color="green" label={bannerT('mainButtonLabel')} onClick={() => {}} />
         <h4 className="text-green font-medium md:text-[16px] text-[14px]">
-          {secondaryButtonLabel}
+          {bannerT('secondaryButtonLabel')}
         </h4>
       </div>
       <div className="bg-3" />

@@ -87,7 +87,6 @@ export default async function LocaleLayout({
             <main>{children}</main>
             <Footer/>
           </ClientOnly>
-          saba
         </NextIntlClientProvider>
       </body>
     </html>
