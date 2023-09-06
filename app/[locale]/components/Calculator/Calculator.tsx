@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { MainDropdown } from "../Dropdowns/CalculatorDropdown";
 import {
   cooling,
@@ -17,8 +17,8 @@ import {
 import { FillButton } from "../Buttons";
 import Icon from "../Icon";
 import WebsiteIcons from "@/public/svg/IconsObject";
-import { useTranslations } from "next-intl";
-
+import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 export type Values = {
   houseType: {
     value: string;
@@ -63,8 +63,10 @@ export type Values = {
 };
 
 export const Calculator = () => {
+  const locale = useLocale();
   const contentT = useTranslations("Calculator.content");
   const errorT = useTranslations("Calculator.errors");
+  const resultT = useTranslations("Calculator.results");
   const [points, setPoints] = useState(0);
   const [feedback, setFeedback] = useState<"error" | "success" | "">("");
   const [valuesFeedBacks, setValuesFeedBacks] = useState({
@@ -79,6 +81,7 @@ export const Calculator = () => {
     lighting: "",
     percentage: "",
   });
+  const resultsRef = useRef<HTMLDivElement>(null);
   const keys = [
     "houseType",
     "insulation",
@@ -144,13 +147,10 @@ export const Calculator = () => {
       point: 0,
     },
   });
-  console.log = function () {};
 
   const updateValues = useCallback(
     (value: string, pointsToAdd: number, type: keyof Values) => {
       if (values[type].value !== value) {
-        console.log(type);
-
         setValues((prev) => ({
           ...prev,
           [type]: {
@@ -164,9 +164,15 @@ export const Calculator = () => {
   );
   const handleSubmit = () => {
     setFeedback("");
-    const allValuesHaveLength = Object.values(values).every(
-      (item) => item.value.length > 0
-    );
+    const allValuesHaveLength = Object.keys(values)
+      .filter((key) => {
+        const insulationValue = values.insulation.value;
+        if (insulationValue === "No" || insulationValue === "არა") {
+        } else {
+          return key !== "material";
+        }
+      })
+      .every((key) => values[key as keyof Values].value.length > 0);
     if (allValuesHaveLength) {
       const totalPoints = Object.values(values).reduce(
         (accumulator, currentValue) => {
@@ -174,7 +180,8 @@ export const Calculator = () => {
         },
         0
       );
-      console.log("Total Points:", totalPoints / 9);
+      setPoints(totalPoints / 9);
+      setFeedback("success");
     } else {
       setFeedback("error");
     }
@@ -233,7 +240,7 @@ export const Calculator = () => {
               placeholder={contentT(`material.placeholder`)}
               content={optionKeys.slice(0, 7).map((key) => ({
                 label: contentT(`material.${key}.label`),
-                point: parseInt(contentT(`material.${key}.point`)),
+                point: contentT(`material.${key}.point`),
               }))}
               label={contentT(`material.name`)}
               type={"material"}
@@ -359,6 +366,92 @@ export const Calculator = () => {
           />
         </div>
       </div>
+      {points !== 0 && feedback === "success" ? (
+        <div className="mt-[70px]" ref={resultsRef}>
+          <div className="flex items-start justify-between">
+            <div className="mt-[30px]">
+              <h1 className="text-red-600 font-bold text-[66px]">
+                {points >= 7
+                  ? "A"
+                  : points >= 6
+                  ? "B"
+                  : points >= 5
+                  ? "C"
+                  : points >= 4
+                  ? "D"
+                  : points >= 3
+                  ? "E"
+                  : points >= 2
+                  ? "F"
+                  : points >= 1
+                  ? "C"
+                  : "G"}
+              </h1>
+              <p className="text-[16px] text-lightPurple">
+                {resultT("Rating.message", {
+                  rating: `${
+                    locale === "ge"
+                      ? points >= 7
+                        ? "საუკეთესო"
+                        : points >= 6
+                        ? "ძალიან კარგი"
+                        : points >= 5
+                        ? "კარგი"
+                        : points >= 4
+                        ? "ნორმალური"
+                        : points >= 3
+                        ? "ცუდი"
+                        : points >= 2
+                        ? "ძალიან ცუდი"
+                        : points >= 1
+                        ? "საშინელი"
+                        : "ყველაზე ცუდი"
+                      : points >= 7
+                      ? "best"
+                      : points >= 6
+                      ? "very good"
+                      : points >= 5
+                      ? "good"
+                      : points >= 4
+                      ? "normal"
+                      : points >= 3
+                      ? "bad"
+                      : points >= 2
+                      ? "very bad"
+                      : points >= 1
+                      ? "terrible"
+                      : "worst"
+                  }`,
+                })}
+              </p>
+            </div>
+            <div>
+              <img
+                src={`/images/SustainableResults/En/${points >= 7
+                    ? "A"
+                    : points >= 6
+                    ? "B"
+                    : points >= 5
+                    ? "C"
+                    : points >= 4
+                    ? "D"
+                    : points >= 3
+                    ? "E"
+                    : points >= 2
+                    ? "F"
+                    : points >= 1
+                    ? "C"
+                    : "G"}.png`}
+                alt="Results"
+                width={600}
+                height={600}
+              />
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

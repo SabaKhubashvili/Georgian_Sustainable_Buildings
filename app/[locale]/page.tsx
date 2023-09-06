@@ -4,6 +4,12 @@ import { AboutSustainability } from "./components/Sections/AbuotSustainability/A
 import { AboutUs } from "./components/Sections/AboutUs/AboutUs";
 import { Portfolio } from "./components/Portfolio/Portfolio";
 
+export const metadata = {
+  title:'Home',
+  description:'Calculate sustainability of your house'
+}
+
+
 export default function Home() {
 
   return (

@@ -10,7 +10,7 @@ interface Props{
     type:keyof Values,
     content:{
         label:string,
-        point:number
+        point:any
     }[],
     value?:string,
     setValue:(value:string,points:number,type:keyof Values)=>void,

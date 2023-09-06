@@ -88,11 +88,11 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Private house",
-          "point": 7
+          "point": "7"
         },
         "option2": {
           "label": "Apartment",
-          "point": 5.5
+          "point": "5.5"
         }
       },
       "insulation": {
@@ -100,11 +100,11 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Yes",
-          "point": 7
+          "point": "7"
         },
         "option2": {
           "label": "No",
-          "point": 0
+          "point": "0"
         }
       },
       "material": {
@@ -112,31 +112,31 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Stone",
-          "point": 3.5
+          "point": "3.5"
         },
         "option2": {
           "label": "Wood",
-          "point": 4.5
+          "point": "4.5"
         },
         "option3": {
           "label": "Brick",
-          "point": 4
+          "point": "4"
         },
         "option4": {
           "label": "Concrete Block",
-          "point": 2
+          "point": "2"
         },
         "option5": {
           "label": "Reinforced Concrete",
-          "point": 5
+          "point": "5"
         },
         "option6": {
           "label": "Plaster and Stucco",
-          "point": 3
+          "point": "3"
         },
         "option7": {
           "label": "Concrete prefabricated Panels",
-          "point": 5.5
+          "point": "5.5"
         }
       },
       "windowsAndDoors": {
@@ -144,19 +144,19 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Double, metal plastic",
-          "point": 6
+          "point": "6"
         },
         "option2": {
           "label": "Triple, metal plastic",
-          "point": 6
+          "point": "6"
         },
         "option3": {
           "label": "Wooden",
-          "point": 4.5
+          "point": "4.5"
         },
         "option4": {
           "label": "Metal",
-          "point": 2.5
+          "point": "2.5"
         }
       },
       "heat": {
@@ -164,19 +164,19 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Central heating system",
-          "point": 7
+          "point": "7"
         },
         "option2": {
           "label": "Local heating systems",
-          "point": 3
+          "point": "3"
         },
         "option3": {
           "label": "Stoves, Fireplaces",
-          "point": 2.5
+          "point": "2.5"
         },
         "option4": {
           "label": "Combination systems",
-          "point": 5
+          "point": "5"
         }
       },
       "houseHeating": {
@@ -184,19 +184,19 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Oil",
-          "point": 2.5
+          "point": "2.5"
         },
         "option2": {
           "label": "Natural gas",
-          "point": 6
+          "point": "6"
         },
         "option3": {
           "label": "Electricity",
-          "point": 6.5
+          "point": "6.5"
         },
         "option4": {
           "label": "Biomass",
-          "point": 4.5
+          "point": "4.5"
         }
       },
       "cooling": {
@@ -204,19 +204,19 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Air Conditioning",
-          "point": 3
+          "point": "3"
         },
         "option2": {
           "label": "Evaporative coolers",
-          "point": 5
+          "point": "5"
         },
         "option3": {
           "label": "Ceiling fans and stand fans",
-          "point": 4
+          "point": "4"
         },
         "option4": {
           "label": "Natural ventilation",
-          "point": 7
+          "point": "7"
         }
       },
       "certificates": {
@@ -224,11 +224,11 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Yes",
-          "point": 7
+          "point": "7"
         },
         "option2": {
           "label": "No",
-          "point": 0
+          "point": "0"
         }
       },
       "lighting": {
@@ -236,19 +236,19 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Incandescent lamps",
-          "point": 3
+          "point": "3"
         },
         "option2": {
           "label": "Compact fluorescent lamps",
-          "point": 6
+          "point": "6"
         },
         "option3": {
           "label": "LED Lighting",
-          "point": 7
+          "point": "7"
         },
         "option4": {
           "label": "Halogen lighting",
-          "point": 4.5
+          "point": "4.5"
         }
       },
       "percentage": {
@@ -256,29 +256,34 @@
         "placeholder": "Choose",
         "option1": {
           "label": "100%",
-          "point": 7
+          "point": "7"
         },
         "option2": {
           "label": "75%",
-          "point": 5.25
+          "point": "5.25"
         },
         "option3": {
           "label": "50%",
-          "point": 3.5
+          "point": "3.5"
         },
         "option4": {
           "label": "25%",
-          "point": 1.75
+          "point": "1.75"
         },
         "option5": {
           "label": "0%",
-          "point": 0
+          "point": "0"
         }
       }
     },
 
     "errors": {
       "required": "All fields are required"
+    },
+    "results":{
+      "Rating":{
+        "message":"Your result is {rating}"
+      }
     }
   }
 }

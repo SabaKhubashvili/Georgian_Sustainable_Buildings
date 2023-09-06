@@ -3,6 +3,11 @@ import { Container } from "../components/Container";
 import { Calculator } from "../components/Calculator/Calculator";
 import { useTranslations } from "next-intl";
 
+export const metadata = {
+  title:'Calculator',
+  description:'Calculate sustainability of your house'
+}
+
 const Page = () => {
   return (
     <Container>

@@ -280,6 +280,11 @@
     },
     "errors": {
       "required": "ყველა ველი საჭიროა"
+    },
+    "results":{
+      "Rating":{
+        "message":"თქვენი შეფასება არის {rating}"
+      }
     }
   }
 }
