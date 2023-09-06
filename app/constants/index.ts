@@ -1,3 +1,5 @@
+import { useLocale } from "next-intl";
+
 export const types = [
   {
     label: "Private house.",
@@ -46,7 +48,7 @@ export const material = [
     point: 3,
   },
   {
-    label: "concrete prefabricated Panels",
+    label: "Concrete prefabricated Panels",
     point: 5.5,
   },
 ];
