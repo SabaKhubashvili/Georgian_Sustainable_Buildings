@@ -428,7 +428,7 @@ export const Calculator = () => {
             </div>
             <div>
               <Image
-                src={`/images/SustainableResults/En/${points >= 7
+                src={`/Images/SustainableResults/En/${points >= 7
                     ? "A"
                     : points >= 6
                     ? "B"
