@@ -22,16 +22,16 @@
   },
   "AboutSustainability": {
     "Title": "Energy efficiency in practice. What is the goal of energy efficiency?",
-    "subTitle": "Often in Georgia, when we talk about the energy deficit, we bring as a necessary the construction of additional generation facilities to the fore, For some reason, we generally forget that energy demand can be met not only by increased supply but also by reduced demand.",
+    "subTitle": "A report published by the European Union shows that, since the first measures were introduced in national building standards, energy consumption in new buildings today has been halved compared to typical buildings of the 1980s.",
     "information": {
       "title1": "Increase energy efficiency",
-      "subTitle1": "By increasing the energy efficiency of the existing buildings, as well as the implementation of current and future constructions in compliance with high standards of energy efficiency, in the reality of Georgia, on the example of the EU countries, the total energy consumption can be reduced by approximately 10-15%. If we take into account that 46% of energy consumption in Georgia comes from buildings.  ",
+      "subTitle1": "Often in Georgia, when we talk about the energy deficit, we bring as a necessary the construction of additional generation facilities to the fore, For some reason, we generally forget that energy demand can be met not only by increased supply but also by reduced demand. By increasing the energy efficiency of the existing buildings, as well as the implementation of current and future constructions in compliance with high standards of energy efficiency, in the reality of Georgia, on the example of the EU countries, the total energy consumption can be reduced by approximately 10-15%. If we take into account that 46% of energy consumption in Georgia comes from buildings.",
 
       "subTitle2": "Replace old incandescent bulbs with compact fluorescent (CFL) or LED lights. In the case of CFL and LED lighting, the cost is 75% lower and it lasts ten times longer.",
 
-      "subTitle3": ".   Replace the old water heater with a new energy-efficient device and reduce energy    consumption by 20%. The savings will cover the cost of the new device. ",
+      "subTitle3": "Replace the old water heater with a new energy-efficient device and reduce energy    consumption by 20%. The savings will cover the cost of the new device. ",
 
-      "subTitle4": "Insulate the house by using building insulation. 50-55% of heat is lost through the roof and walls of the house.",
+      "subTitle4": "Fill gaps in windows and doors and save 10% of your home's heating and cooling costs every year.",
 
       "subTitle5": "Insulate the house by using building insulation. 50-55% of heat is lost through the roof and walls of the house. "
     },
@@ -96,7 +96,7 @@
         }
       },
       "insulation": {
-        "name": "Insulation:",
+        "name": "Do you have building Insulation:",
         "placeholder": "Choose",
         "option1": {
           "label": "Yes",
@@ -108,7 +108,7 @@
         }
       },
       "material": {
-        "name": "Material:",
+        "name": "Building construction material:",
         "placeholder": "Choose",
         "option1": {
           "label": "Stone",
@@ -160,7 +160,7 @@
         }
       },
       "heat": {
-        "name": "Heating:",
+        "name": "What do you use to heat your home? ",
         "placeholder": "Choose",
         "option1": {
           "label": "Central heating system",
@@ -180,7 +180,7 @@
         }
       },
       "houseHeating": {
-        "name": "House Heating:",
+        "name": "Heating System:",
         "placeholder": "Choose",
         "option1": {
           "label": "Oil",
@@ -200,7 +200,7 @@
         }
       },
       "cooling": {
-        "name": "Cooling:",
+        "name": "Cooling system:",
         "placeholder": "Choose",
         "option1": {
           "label": "Air Conditioning",
@@ -220,7 +220,7 @@
         }
       },
       "certificates": {
-        "name": "Certificates:",
+        "name": "Do you use appliances with energy-efficient certificates:",
         "placeholder": "Choose",
         "option1": {
           "label": "Yes",
@@ -252,7 +252,7 @@
         }
       },
       "percentage": {
-        "name": "Percentage:",
+        "name": "What percentage of the total energy consumed per year is renewable energy?",
         "placeholder": "Choose",
         "option1": {
           "label": "100%",

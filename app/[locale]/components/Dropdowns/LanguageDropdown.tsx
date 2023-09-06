@@ -4,12 +4,13 @@ import {useState,useContext,useEffect,useRef} from 'react'
 import { GeorgiaIcon, LanguageIcon, UsaIcon } from "@/public/svg/icons"
 import Link from 'next-intl/link'
 import { NavContext } from '../../providers/NavbarContextProvider'
+import { useTranslations } from 'next-intl'
 
 
 export const LanguageDropdown = () => {
     const [isToggled,setIsToggled] = useState<boolean>(false)
     const dropdownRef = useRef<HTMLDivElement>(null)
-    const data = useContext(NavContext)
+    const languageT = useTranslations('Navbar.Languages')
     
     useEffect(()=>{
         if(isToggled){
@@ -35,13 +36,13 @@ export const LanguageDropdown = () => {
                         <p className='w-[1.3rem]'>
                             <GeorgiaIcon/>
                         </p>
-                        <p>{data.languages.ge}</p>
+                        <p>{languageT('ge')}</p>
                     </Link>
                     <Link href={'/'} locale="en" className='flex gap-[4px]'>
                         <p className='w-[1.3rem]'>
                             <UsaIcon/>
                         </p>
-                        <p>{data.languages.en}</p>
+                        <p>{languageT('en')}</p>
                     </Link>
                 </div>
             )

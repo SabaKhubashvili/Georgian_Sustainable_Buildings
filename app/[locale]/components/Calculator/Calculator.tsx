@@ -91,7 +91,16 @@ export const Calculator = () => {
     "lighting",
     "percentage",
   ] as const;
-  const optionKeys = ['option1','option2','option3','option4','option5','option6','option7','option8']
+  const optionKeys = [
+    "option1",
+    "option2",
+    "option3",
+    "option4",
+    "option5",
+    "option6",
+    "option7",
+    "option8",
+  ];
   const errorKeys = ["required"];
   const [values, setValues] = useState<Values>({
     houseType: {
@@ -135,7 +144,7 @@ export const Calculator = () => {
       point: 0,
     },
   });
-  console.log = function() {};
+  console.log = function () {};
 
   const updateValues = useCallback(
     (value: string, pointsToAdd: number, type: keyof Values) => {
@@ -165,7 +174,6 @@ export const Calculator = () => {
         },
         0
       );
-
       console.log("Total Points:", totalPoints / 9);
     } else {
       setFeedback("error");
@@ -185,161 +193,161 @@ export const Calculator = () => {
         </div>
       )}
       <div className="flex justify-center gap-x-4 flex-wrap gap-y-[10px] md:flex-row flex-col ">
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
+            }
+            placeholder={contentT(`houseType.placeholder`)}
+            content={optionKeys.slice(0, 2).map((key) => ({
+              label: contentT(`houseType.${key}.label`),
+              point: parseInt(contentT(`houseType.${key}.point`)),
+            }))}
+            label={contentT(`houseType.name`)}
+            type={"houseType"}
+            value={values.houseType.value}
+          />
+        </div>
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
+            }
+            placeholder={contentT(`insulation.placeholder`)}
+            content={optionKeys.slice(0, 2).map((key) => ({
+              label: contentT(`insulation.${key}.label`),
+              point: parseInt(contentT(`insulation.${key}.point`)),
+            }))}
+            label={contentT(`insulation.name`)}
+            type={"insulation"}
+            value={values.insulation.value}
+          />
+        </div>
+        {values.insulation.value === "No" ||
+        values.insulation.value === "არა" ? (
           <div className="md:w-[46%]  flex items-end">
-            <MainDropdown
-              setValue={(value: string, points: number, type: keyof Values) =>
-                updateValues(value, points, type)
-              }
-              placeholder={contentT(`houseType.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`houseType.${key}.label`),
-                point:parseInt(contentT(`houseType.${key}.point`)),
-              }))}
-              label={contentT(`houseType.name`)}
-              type={'houseType'}
-              value={values.houseType.value}
-            />
-          </div>
-          <div className="md:w-[46%]  flex items-end">
-            <MainDropdown
-              setValue={(value: string, points: number, type: keyof Values) =>
-                updateValues(value, points, type)
-              }
-              placeholder={contentT(`insulation.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`insulation.${key}.label`),
-                point:parseInt(contentT(`insulation.${key}.point`)),
-              }))}
-              label={contentT(`insulation.name`)}
-              type={'insulation'}
-              value={values.insulation.value}
-            />
-          </div>
-          { values.insulation.value === 'No' || values.insulation.value === 'არა' ?
-
-            <div className="md:w-[46%]  flex items-end">
             <MainDropdown
               setValue={(value: string, points: number, type: keyof Values) =>
                 updateValues(value, points, type)
               }
               placeholder={contentT(`material.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`material.${key}.label`),
-                point:parseInt(contentT(`material.${key}.point`)),
+              content={optionKeys.slice(0, 7).map((key) => ({
+                label: contentT(`material.${key}.label`),
+                point: parseInt(contentT(`material.${key}.point`)),
               }))}
               label={contentT(`material.name`)}
-              type={'material'}
+              type={"material"}
               value={values.material.value}
-              />
+            />
           </div>
-          :
-          ''
+        ) : (
+          ""
+        )}
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
             }
-          <div className="md:w-[46%]  flex items-end">
-            <MainDropdown
-              setValue={(value: string, points: number, type: keyof Values) =>
-                updateValues(value, points, type)
-              }
-              placeholder={contentT(`windowsAndDoors.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`windowsAndDoors.${key}.label`),
-                point:parseInt(contentT(`windowsAndDoors.${key}.point`)),
-              }))}
-              label={contentT(`windowsAndDoors.name`)}
-              type={'windowsAndDoors'}
-              value={values.windowsAndDoors.value}
-            />
-          </div>
-          <div className="md:w-[46%]  flex items-end">
-            <MainDropdown
-              setValue={(value: string, points: number, type: keyof Values) =>
-                updateValues(value, points, type)
-              }
-              placeholder={contentT(`heat.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`heat.${key}.label`),
-                point:parseInt(contentT(`heat.${key}.point`)),
-              }))}
-              label={contentT(`heat.name`)}
-              type={'heat'}
-              value={values.heat.value}
-            />
-          </div>
-          <div className="md:w-[46%]  flex items-end">
-            <MainDropdown
-              setValue={(value: string, points: number, type: keyof Values) =>
-                updateValues(value, points, type)
-              }
-              placeholder={contentT(`houseHeating.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`houseHeating.${key}.label`),
-                point:parseInt(contentT(`houseHeating.${key}.point`)),
-              }))}
-              label={contentT(`houseHeating.name`)}
-              type={'houseHeating'}
-              value={values.houseHeating.value}
-            />
-          </div>
-          <div className="md:w-[46%]  flex items-end">
-            <MainDropdown
-              setValue={(value: string, points: number, type: keyof Values) =>
-                updateValues(value, points, type)
-              }
-              placeholder={contentT(`cooling.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`cooling.${key}.label`),
-                point:parseInt(contentT(`cooling.${key}.point`)),
-              }))}
-              label={contentT(`cooling.name`)}
-              type={'cooling'}
-              value={values.cooling.value}
-            />
-          </div>
-          <div className="md:w-[46%]  flex items-end">
-            <MainDropdown
-              setValue={(value: string, points: number, type: keyof Values) =>
-                updateValues(value, points, type)
-              }
-              placeholder={contentT(`certificates.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`certificates.${key}.label`),
-                point:parseInt(contentT(`certificates.${key}.point`)),
-              }))}
-              label={contentT(`certificates.name`)}
-              type={'certificates'}
-              value={values.certificates.value}
-            />
-          </div>
-          <div className="md:w-[46%]  flex items-end">
-            <MainDropdown
-              setValue={(value: string, points: number, type: keyof Values) =>
-                updateValues(value, points, type)
-              }
-              placeholder={contentT(`lighting.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`lighting.${key}.label`),
-                point:parseInt(contentT(`lighting.${key}.point`)),
-              }))}
-              label={contentT(`lighting.name`)}
-              type={'lighting'}
-              value={values.lighting.value}
-            />
-          </div>
-          <div className="md:w-[46%]  flex items-end">
-            <MainDropdown
-              setValue={(value: string, points: number, type: keyof Values) =>
-                updateValues(value, points, type)
-              }
-              placeholder={contentT(`percentage.placeholder`)}
-              content={optionKeys.slice(0,2).map(key=>({
-                label:contentT(`percentage.${key}.label`),
-                point:parseInt(contentT(`percentage.${key}.point`)),
-              }))}
-              label={contentT(`percentage.name`)}
-              type={'percentage'}
-              value={values.percentage.value}
-            />
-          </div>
+            placeholder={contentT(`windowsAndDoors.placeholder`)}
+            content={optionKeys.slice(0, 4).map((key) => ({
+              label: contentT(`windowsAndDoors.${key}.label`),
+              point: parseInt(contentT(`windowsAndDoors.${key}.point`)),
+            }))}
+            label={contentT(`windowsAndDoors.name`)}
+            type={"windowsAndDoors"}
+            value={values.windowsAndDoors.value}
+          />
+        </div>
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
+            }
+            placeholder={contentT(`heat.placeholder`)}
+            content={optionKeys.slice(0, 4).map((key) => ({
+              label: contentT(`heat.${key}.label`),
+              point: parseInt(contentT(`heat.${key}.point`)),
+            }))}
+            label={contentT(`heat.name`)}
+            type={"heat"}
+            value={values.heat.value}
+          />
+        </div>
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
+            }
+            placeholder={contentT(`houseHeating.placeholder`)}
+            content={optionKeys.slice(0, 4).map((key) => ({
+              label: contentT(`houseHeating.${key}.label`),
+              point: parseInt(contentT(`houseHeating.${key}.point`)),
+            }))}
+            label={contentT(`houseHeating.name`)}
+            type={"houseHeating"}
+            value={values.houseHeating.value}
+          />
+        </div>
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
+            }
+            placeholder={contentT(`cooling.placeholder`)}
+            content={optionKeys.slice(0, 4).map((key) => ({
+              label: contentT(`cooling.${key}.label`),
+              point: parseInt(contentT(`cooling.${key}.point`)),
+            }))}
+            label={contentT(`cooling.name`)}
+            type={"cooling"}
+            value={values.cooling.value}
+          />
+        </div>
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
+            }
+            placeholder={contentT(`certificates.placeholder`)}
+            content={optionKeys.slice(0, 2).map((key) => ({
+              label: contentT(`certificates.${key}.label`),
+              point: parseInt(contentT(`certificates.${key}.point`)),
+            }))}
+            label={contentT(`certificates.name`)}
+            type={"certificates"}
+            value={values.certificates.value}
+          />
+        </div>
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
+            }
+            placeholder={contentT(`lighting.placeholder`)}
+            content={optionKeys.slice(0, 4).map((key) => ({
+              label: contentT(`lighting.${key}.label`),
+              point: parseInt(contentT(`lighting.${key}.point`)),
+            }))}
+            label={contentT(`lighting.name`)}
+            type={"lighting"}
+            value={values.lighting.value}
+          />
+        </div>
+        <div className="md:w-[46%]  flex items-end">
+          <MainDropdown
+            setValue={(value: string, points: number, type: keyof Values) =>
+              updateValues(value, points, type)
+            }
+            placeholder={contentT(`percentage.placeholder`)}
+            content={optionKeys.slice(0, 5).map((key) => ({
+              label: contentT(`percentage.${key}.label`),
+              point: parseInt(contentT(`percentage.${key}.point`)),
+            }))}
+            label={contentT(`percentage.name`)}
+            type={"percentage"}
+            value={values.percentage.value}
+          />
+        </div>
       </div>
       <div className="w-full  flex justify-center">
         <div className="pt-[50px] 2xl:w-[200px] xl:w-[130px] lg:w-[120px] md:w-[110px] sm:w-[100px]">

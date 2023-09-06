@@ -3,20 +3,18 @@
 import React, { useState } from "react";
 import { Container } from "../Container";
 import { PortfolioImageComponent } from "./PortfolioImageComponent";
+import { useTranslations } from "next-intl";
 
-interface Props{
-    title:string,
-    description:string
-}
 
-export const Portfolio = ({title,description}:Props) => {
 
+export const Portfolio = () => {
+  const portfolioT = useTranslations('Portfolio')
   const slicedDescription =
-    description.length > 400
-      ? description.slice(0, 400).split(" ").slice(0, -1).join(" ")
-      : description;
+    portfolioT('description').length > 700
+      ? portfolioT('description').slice(0, 700).split(" ").slice(0, -1).join(" ")
+      : portfolioT('description');
 
-  const remainingText = description.slice(slicedDescription.length);
+  const remainingText = portfolioT('description').slice(slicedDescription.length);
 
   return (
     <section id="portfolio" className="lg:pt-[359px] pt-[300px] -mt-[150px] bg-[#00A5780D]">
@@ -27,12 +25,12 @@ export const Portfolio = ({title,description}:Props) => {
         >
           <div className="basis-auto w-full ">
             <h1 className="text-darkpurple font-semibold leading-[140%] xl:text-[36px] md:text-[30px] text-[20px]  ">
-              {title}
+              {portfolioT('title')}
             </h1>
             <p className="pt-[40px] text-darkpurple sm:text-[18px] text-[16px]">
               {slicedDescription}
             </p>
-            <div className="lg:pt-[71px] flex justify-between items-start gap-[20px] lg:flex-row flex-col ">
+            <div className="lg:pt-[13px] flex justify-between items-start gap-[20px] lg:flex-row flex-col ">
               {remainingText.length > 1 && (
                 <p className=" text-darkpurple text-[18px]">{remainingText}</p>
               )}
