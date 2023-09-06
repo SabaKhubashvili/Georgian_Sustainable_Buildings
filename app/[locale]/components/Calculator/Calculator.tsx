@@ -168,6 +168,7 @@ export const Calculator = () => {
       .filter((key) => {
         const insulationValue = values.insulation.value;
         if (insulationValue === "No" || insulationValue === "არა") {
+          return true
         } else {
           return key !== "material";
         }
@@ -426,7 +427,7 @@ export const Calculator = () => {
               </p>
             </div>
             <div>
-              <img
+              <Image
                 src={`/images/SustainableResults/En/${points >= 7
                     ? "A"
                     : points >= 6
