@@ -197,11 +197,11 @@ export const Calculator = () => {
           },
           0
           );
-          alert(totalPoints)
           setPoints(Math.round(totalPoints / 9));
           setFeedback("success");
           const offset = -120;
           const element = resultsRef.current;
+          alert(points)
           if (element) {
             const elementRect = element.getBoundingClientRect();
             
@@ -453,9 +453,7 @@ export const Calculator = () => {
                     ? "E"
                     : points >= 2
                     ? "F"
-                    : points >= 1
-                    ? "C"
-                    : "G"}
+                    : 'G'}
                 </h1>
                 <p className="text-[16px] text-lightPurple">
                   {resultT("Rating.message", {
@@ -488,7 +486,7 @@ export const Calculator = () => {
                         ? "bad"
                         : points >= 2
                         ? "very bad"
-                        : points >= 1
+                        : points > 1
                         ? "terrible"
                         : "worst"
                     }`,
@@ -497,7 +495,7 @@ export const Calculator = () => {
               </div>
               <div>
                 <Image
-                  src={`/Images/SustainableResults/En/${
+                  src={`/Images/SustainableResults/${locale === 'en' ? 'En' : 'Ge'}/${
                     points >= 7
                       ? "A"
                       : points >= 6
@@ -510,9 +508,7 @@ export const Calculator = () => {
                       ? "E"
                       : points >= 2
                       ? "F"
-                      : points >= 1
-                      ? "C"
-                      : "G"
+                      : 'G'
                   }.png`}
                   alt="Results"
                   width={600}
@@ -536,7 +532,13 @@ export const Calculator = () => {
               </div>
             </div>
             <div className="flex flex-col gap-[18px]  mt-[20px]">
-              {Object.keys(values).map((key) => {
+              {Object.keys(values).filter(key=>{
+                if (key === "material") {
+                  const insulationValue = values.insulation.value;
+                  return insulationValue == "No" || insulationValue == "არა";
+                }
+                return true;}
+              ).map((key) => {
                 const feedbackKey = key as keyof Values;
                 return (
                   values[feedbackKey].feedback.length > 0 && (
