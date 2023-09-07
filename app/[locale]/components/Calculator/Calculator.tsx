@@ -403,7 +403,7 @@ export const Calculator = () => {
       {points !== 0 && feedback === "success" ? (
         <React.Fragment>
 
-          <div className="flex items-start justify-between">
+          <div className="flex items-start justify-between sm:flex-row flex-col">
             <div className="mt-[30px]">
               <h1 className="text-red-600 font-bold text-[66px]">
                 {points >= 7
@@ -506,8 +506,8 @@ export const Calculator = () => {
                   values[key].point >= 6 ? 'bg-[#268a26]' : values[key].point >= 3 ? 'bg-[#a2a21b]' : 'bg-[#E23636]'
                  }
                  `}>
-                  <h1 className="text-[#FFF] font-bold text-[20px]">{key}</h1>
-                  <p className=" text-[#FFF]"> {values[key].feedback}</p>
+                  <h1 className="text-[#FFF] font-bold sm:text-[20px] text-[16px]">{key}</h1>
+                  <p className=" text-[#FFF] sm:text-[16px] text-[14px]"> {values[key].feedback}</p>
                 </div>
               ))}
           </div>
