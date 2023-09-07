@@ -82,7 +82,7 @@ export const Footer = ({}: Props) => {
                 </a>
               </li>
               <li className="text-[#5E6191]  text-[14px] cursor-pointer">
-                360 Spear St Floor 4, San Francisco, CA 94105
+                Tbilisi Georgia
               </li>
             </ul>
           </div>

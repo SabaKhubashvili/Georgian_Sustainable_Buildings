@@ -88,11 +88,13 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Private house",
-          "point": "7"
+          "point": "7",
+          "feedback":"A private house can potentially be more energy-efficient than an apartment if it is well-designed and built with energy-efficient features"
         },
         "option2": {
           "label": "Apartment",
-          "point": "5.5"
+          "point": "5.5",
+          "feedback":"Apartments can be energy-efficient, especially if they are part of a well-designed, energy-efficient building. The energy efficiency of apartments can vary widely based on building design and maintenance."
         }
       },
       "insulation": {
@@ -100,11 +102,13 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Yes",
-          "point": "7"
+          "point": "7",
+          "feedback":"Did you know that air leaks around doors account for 18-20 percent of heat loss in a typical home; Drafty windows account for up to 30 percent of heat loss. A 3-mm gap under an exterior door lets as much cold air in as a 6-cm hole punched in the wall"
         },
         "option2": {
           "label": "No",
-          "point": "0"
+          "point": "0",
+          "feedback":"Did you know that 35% of energy losses come from walls? In order to increase the energy efficiency of your home, it is first important to provide adequate insulation on the walls, ceiling and floor of the building. as well as to fill the gaps between doors and windows. which will reduce energy losses by two times, make the living environment more comfortable."
         }
       },
       "material": {
@@ -112,31 +116,38 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Stone",
-          "point": "3.5"
+          "point": "1",
+          "feedback":"Except insulation energy efficiency also depends on what material you use for construction. Natural stone, like brick, has thermal mass properties that can be beneficial for energy efficiency. However, it also requires additional insulation to meet modern energy efficiency standards. Without insulation, we can not consider it as high energy efficient. To improve the energy efficiency of your home first and cheapest way is to invest in good insulation, it will save your monthly bills and improve your living environment."
         },
         "option2": {
           "label": "Wood",
-          "point": "4.5"
+          "point": "2.5",
+          "feedback":"Wood is a natural insulator and can be energy-efficient when used in buildings with proper insulation and design considerations. Therefore, in the case of wooden construction, it is first of all important to arrange proper insulation to increase energy efficiency. To improve the energy efficiency of your home first and cheapest way is to invest in good insulation, it will save your monthly bills and improve your living environment."
         },
         "option3": {
           "label": "Brick",
-          "point": "4"
+          "point": "2",
+          "feedback":"Brick walls can offer good thermal mass, helping to moderate indoor temperatures, but they require additional insulation to be highly energy-efficient. To improve the energy efficiency of your home first and cheapest way is to invest in good insulation, it will save your monthly bills and improve your living environment"   
         },
         "option4": {
           "label": "Concrete Block",
-          "point": "2"
+          "point": "6",
+          "feedback":"Concrete block walls without additional insulation can have limited energy efficiency because concrete conducts heat, potentially leading to heat loss or gain. To improve the energy efficiency of your home first and cheapest way is to invest in good insulation, it will save your monthly bills and improve your living environment."
         },
         "option5": {
           "label": "Reinforced Concrete",
-          "point": "5"
+          "point": "1",
+          "feedback":"Reinforced concrete walls can be energy-efficient when they are part of a well-insulated building envelope. However, without insulation, concrete can conduct heat, making it less energy-efficient. To improve the energy efficiency of your home first and cheapest way is to invest in good insulation, it will save your monthly bills and improve your living environment"
         },
         "option6": {
           "label": "Plaster and Stucco",
-          "point": "3"
+          "point": "2.5",
+          "feedback":"Plaster and stucco are typically applied over other wall materials and don't provide insulation on their own. It can be considered as the worst thermal insulator, so it is most important to arrange appropriate insulation on the walls which will increase the energy efficiency. The first and cheapest way to improve your home's energy efficiency is to invest in good insulation, this will save you money on your monthly bills and improve your living environment."
         },
         "option7": {
           "label": "Concrete prefabricated Panels",
-          "point": "5.5"
+          "point": "1.5",
+          "feedback":"concrete prefabricated panels can be designed and manufactured with high levels of insulation, making them potentially the most energy-efficient option when designed and installed with proper insulation. Proper insulation will increase the value of your home, improve your living environment, and significantly reduce your bills."
         }
       },
       "windowsAndDoors": {
@@ -144,19 +155,23 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Double, metal plastic",
-          "point": "6"
+          "point": "6",
+          "feedback":"Double-glazed windows with metal or plastic frames are energy-efficient. but you can improve them with triple metal-plastic windows. The additional layer of glazing improves insulation and reduces heat transfer, making them very energy-efficient."
         },
         "option2": {
           "label": "Triple, metal plastic",
-          "point": "6"
+          "point": "6",
+          "feedback":"Triple-glazed windows typically provide the highest level of energy efficiency. The additional layer of glazing improves insulation and reduces heat transfer, making them very energy-efficient."
         },
         "option3": {
           "label": "Wooden",
-          "point": "4.5"
+          "point": "4.5",
+          "feedback":"Wooden window frames can be energy-efficient when they are well-insulated and properly sealed. Wood is a natural insulator and can contribute to energy efficiency. you can add good insulation or change them with double or triple metal-plastic windows to improve your energy efficiency level."
         },
         "option4": {
           "label": "Metal",
-          "point": "2.5"
+          "point": "2.5",
+          "feedback":"Metal window frames, especially without thermal breaks, can have lower energy efficiency compared to other options. Metal conducts heat more readily, potentially leading to heat loss or gain. you can add good insulation or change them with double or triple metal-plastic windows to improve your energy efficiency level."
         }
       },
       "heat": {
@@ -164,19 +179,23 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Central heating system",
-          "point": "7"
+          "point": "7",
+          "feedback":"Central heating systems, especially those using high-efficiency boilers or heat pumps, tend to be among the most energy-efficient options. These systems can distribute heat evenly throughout a building and are often designed for optimal efficiency."
         },
         "option2": {
           "label": "Local heating systems",
-          "point": "3"
-        },
+          "point": "3",
+          "feedback":"Local heating systems, such as individual room heaters or space heaters, can be efficient if they use energy-efficient technologies (e.g., high-efficiency wood stoves or electric heat pumps). However, they may be less efficient when used as the primary heating source for an entire building, especially in larger structures. Replacing the local system with central heating systems will increase the energy efficiency of your home."
+       },
         "option3": {
           "label": "Stoves, Fireplaces",
-          "point": "2.5"
+          "point": "2.5",
+          "feedback":"While wood-burning stoves and fireplaces can provide effective heating and ambiance, their energy efficiency can vary widely. Some older or traditional models may have lower efficiency due to heat loss through the chimney, while newer, EPA-certified models are designed for higher efficiency. Replacing wood stoves with central heating systems will increase your home's energy efficiency."
         },
         "option4": {
           "label": "Combination systems",
-          "point": "5"
+          "point": "5",
+          "feedback":"Combination systems that incorporate multiple heating sources, such as a central heating system combined with a supplemental local heating source like a wood stove or fireplace, can be energy-efficient when used strategically. The central system can provide consistent heating, while the local source can be used when additional or zone-specific heating is needed. However, combined heating systems are quite expensive and requares more maintenance."
         }
       },
       "houseHeating": {
@@ -184,19 +203,23 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Oil",
-          "point": "2.5"
+          "point": "2.5",
+          "feedback":"Heating with oil is typically less energy-efficient. You can improve your building's energy efficiency by replacing oil with natural gas or 75-100% renewable energy."
         },
         "option2": {
           "label": "Natural gas",
-          "point": "6"
+          "point": "6",
+          "feedback":"Natural gas is often considered one of the most energy-efficient options for heating buildings. But if you are using 75-100% renewable energy it's better to use electric heaters which will improve your energy efficiency and reduce costs."
         },
         "option3": {
           "label": "Electricity",
-          "point": "6.5"
+          "point": "6.5",
+          "feedback":"Electric heating can be efficient when used with heat pumps, such as air-source or ground-source heat pumps. Heat pumps are capable of producing more heating energy than the electrical energy they consume, making them energy-efficient. However, resistance electric heating (e.g., baseboard heaters) is less efficient if you don't use 75-100% renewable energy."
         },
         "option4": {
           "label": "Biomass",
-          "point": "4.5"
+          "point": "4.5",
+          "feedback":"Biomass heating, such as wood pellets or logs, can be energy-efficient if modern, well-designed biomass boilers or stoves are used. You can improve your building energy efficiency by replacing biomass with natural gas or 75-100% renewable energy."
         }
       },
       "cooling": {
@@ -204,19 +227,23 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Air Conditioning",
-          "point": "3"
+          "point": "3",
+          "feedback":"While air conditioning systems can provide rapid and precise cooling, they are typically the least energy-efficient option. They consume a significant amount of electricity to operate. Replace them with a heat pump should help your home to increase energy efficiency."
         },
         "option2": {
           "label": "Evaporative coolers",
-          "point": "5"
+          "point": "5",
+          "feedback":"Evaporative coolers use water evaporation to cool the air. They are particularly effective in dry, arid climates. They consume less electricity than traditional air conditioning systems"
         },
         "option3": {
           "label": "Ceiling fans and stand fans",
-          "point": "4"
+          "point": "4",
+          "feedback":"Ceiling fans and stand fans are relatively energy-efficient methods for enhancing comfort by improving air circulation. They don't lower the temperature of a room but create a cooling effect by increasing air movement. They use minimal electricity compared to air conditioning. However, to achieve higher efficiency, you can replace traditional fans with heat pumps for home cooling."
         },
         "option4": {
           "label": "Natural ventilation",
-          "point": "7"
+          "point": "7",
+          "feedback":"Natural ventilation is often the most energy-efficient cooling method. It relies on the strategic placement of windows, vents, and building design to promote the flow of outdoor air through the building. It doesn't require electricity and can be highly effective in moderate climates. However, it essentially depends on the original planning of the house. In order to increase the cooling efficiency of your home, we recommend that you install heat pumps."
         }
       },
       "certificates": {
@@ -224,11 +251,13 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Yes",
-          "point": "7"
+          "point": "7",
+          "feedback":""
         },
         "option2": {
           "label": "No",
-          "point": "0"
+          "point": "0",
+          "feedback":"Appliances with energy-efficient certificates consume less energy, reducing electricity bills and conserving resources. Lower energy use means fewer greenhouse gas emissions, contributing to a greener environment. We recommend that you replace your old appliances with new, certified appliances, which can save your electricity bills. Reduced energy bills translate into long-term cost savings for homeowners."
         }
       },
       "lighting": {
@@ -236,19 +265,23 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Incandescent lamps",
-          "point": "3"
+          "point": "3",
+          "feedback":"Incandescent bulbs are the least energy-efficient and produce the most heat. They convert a significant portion of the electricity they consume into heat, which can contribute to increased cooling requirements. In order to increase the energy efficiency of your home, as well as reduce costs and environmental impact, we recommend replacing incandescent lamps with LED lamps."
         },
         "option2": {
           "label": "Compact fluorescent lamps",
-          "point": "6"
+          "point": "6",
+          "feedback":"CFLs are more energy-efficient than incandescent bulbs and produce less heat. While they are cooler than incandescent bulbs, they still emit some heat during operation. In order to increase the energy efficiency of your home, as well as reduce costs and environmental impact, we recommend replacing fluorescent lamps with LED lamps."
         },
         "option3": {
           "label": "LED Lighting",
-          "point": "7"
+          "point": "7",
+          "feedback":"LED (Light Emitting Diode) lighting is the most energy-efficient lighting option and produces very little heat compared to other types of lighting. It contributes minimal heat to indoor spaces, reducing the cooling load on air conditioning systems."
         },
         "option4": {
           "label": "Halogen lighting",
-          "point": "4.5"
+          "point": "4.5",
+          "feedback":"Halogen bulbs are less energy-efficient and produce more heat than LED and CFL bulbs. They can contribute to indoor heat, increasing the cooling load on air conditioning systems. In order to increase the energy efficiency of your home, as well as reduce costs and environmental impact, we recommend replacing halogen lamps with LED lamps."
         }
       },
       "percentage": {
@@ -256,23 +289,28 @@
         "placeholder": "Choose",
         "option1": {
           "label": "100%",
-          "point": "7"
+          "point": "7",
+          "feedback":"Using renewable energy will reduce carbon footprint: Lowers greenhouse gas emissions, mitigates climate change, Conserves resources: Reduces reliance on finite fossil fuels, promotes sustainability, and cuts energy Costs: Can lower long-term energy expenses, especially with incentives, and enhance energy Efficiency: When used exclusively, 100% renewable energy makes a building highly efficient the effect decreases as the renewable energy percentage drops. Promotes Energy Security: Diversifying energy sources increases resilience to supply disruptions. The higher the percentage of renewable energy used, the more a building's energy efficiency improves and its environmental impact decreases. So it is very important to try to use as many renewable sources as it is possible to improve your home's energy efficiency."
         },
         "option2": {
           "label": "75%",
-          "point": "5.25"
+          "point": "5.25",
+          "feedback":"Using renewable energy will reduce carbon footprint: Lowers greenhouse gas emissions, mitigates climate change, Conserves resources: Reduces reliance on finite fossil fuels, promotes sustainability, and cuts energy Costs: Can lower long-term energy expenses, especially with incentives, and enhance energy Efficiency: When used exclusively, 100% renewable energy makes a building highly efficient the effect decreases as the renewable energy percentage drops. Promotes Energy Security: Diversifying energy sources increases resilience to supply disruptions. The higher the percentage of renewable energy used, the more a building's energy efficiency improves and its environmental impact decreases. So it is very important to try to use as many renewable sources as it is possible to improve your home's energy efficiency."
         },
         "option3": {
           "label": "50%",
-          "point": "3.5"
+          "point": "3.5",
+          "feedback":"Using renewable energy will reduce carbon footprint: Lowers greenhouse gas emissions, mitigates climate change, Conserves resources: Reduces reliance on finite fossil fuels, promotes sustainability, and cuts energy Costs: Can lower long-term energy expenses, especially with incentives, and enhance energy Efficiency: When used exclusively, 100% renewable energy makes a building highly efficient the effect decreases as the renewable energy percentage drops. Promotes Energy Security: Diversifying energy sources increases resilience to supply disruptions. The higher the percentage of renewable energy used, the more a building's energy efficiency improves and its environmental impact decreases. So it is very important to try to use as many renewable sources as it is possible to improve your home's energy efficiency"
         },
         "option4": {
           "label": "25%",
-          "point": "1.75"
+          "point": "1.75",
+          "feedback":"Using renewable energy will reduce carbon footprint: Lowers greenhouse gas emissions, mitigates climate change, Conserves resources: Reduces reliance on finite fossil fuels, promotes sustainability, and cuts energy Costs: Can lower long-term energy expenses, especially with incentives, and enhance energy Efficiency: When used exclusively, 100% renewable energy makes a building highly efficient the effect decreases as the renewable energy percentage drops. Promotes Energy Security: Diversifying energy sources increases resilience to supply disruptions. The higher the percentage of renewable energy used, the more a building's energy efficiency improves and its environmental impact decreases. So it is very important to try to use as many renewable sources as it is possible to improve your home's energy efficiency."
         },
         "option5": {
           "label": "0%",
-          "point": "0"
+          "point": "0",
+          "feedback":"Using renewable energy will reduce carbon footprint: Lowers greenhouse gas emissions, mitigates climate change, Conserves resources: Reduces reliance on finite fossil fuels, promotes sustainability, and cuts energy Costs: Can lower long-term energy expenses, especially with incentives, and enhance energy Efficiency: When used exclusively, 100% renewable energy makes a building highly efficient the effect decreases as the renewable energy percentage drops. Promotes Energy Security: Diversifying energy sources increases resilience to supply disruptions. The higher the percentage of renewable energy used, the more a building's energy efficiency improves and its environmental impact decreases. So it is very important to try to use as many renewable sources as it is possible to improve your home's energy efficiency"
         }
       }
     },

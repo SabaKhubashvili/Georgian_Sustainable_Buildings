@@ -33,8 +33,10 @@ export const Navbar = () => {
         <nav className={` 
         ${isTopOfPage ? 'bg-transparent' : 'bg-white'}
         transition-colors duration-200
-        max-w-[1840px] mx-auto py-[30px] xl:px-[75px] lg:px-[60px] md:px-[50px] sm:px-[40px] px-[20px]
-        w-full left-0 top-0 right-0  flex justify-between items-center fixed z-[50]`}>
+         mx-auto py-[30px] xl:px-[75px] lg:px-[60px] md:px-[50px] sm:px-[40px] px-[20px]
+        w-full left-0 top-0 right-0   fixed z-[50]`}>
+          <div className='max-w-[1840px] flex justify-between items-center mx-auto'>
+
             <div className='lg:ml-0 ml-auto'>
               <Logo/>
             </div>
@@ -46,6 +48,7 @@ export const Navbar = () => {
               :
               <SmallScreenNavMenu/>
             }
+          </div>
         </nav>
   )
 }

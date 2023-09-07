@@ -10,10 +10,11 @@ interface Props{
     type:keyof Values,
     content:{
         label:string,
-        point:any
+        point:any,
+        feedback:string
     }[],
     value?:string,
-    setValue:(value:string,points:number,type:keyof Values)=>void,
+    setValue:(value:string,points:number,type:keyof Values,feedback:string)=>void,
     placeholder?:string
 }
 
@@ -70,7 +71,7 @@ export const MainDropdown = ({
                             <h1 className='text-lightPurple text-[14px] cursor-pointer'
                             onClick={()=>{
                                 if(value !== cont.label){
-                                    setValue(cont.label,cont.point,type)
+                                    setValue(cont.label,cont.point,type,cont.feedback)
                                     setIsOpen(false)
                                 }
                             }}
