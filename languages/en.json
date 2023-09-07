@@ -93,7 +93,7 @@
         },
         "option2": {
           "label": "Apartment",
-          "point": "5.5",
+          "point": "4",
           "feedback":"Apartments can be energy-efficient, especially if they are part of a well-designed, energy-efficient building. The energy efficiency of apartments can vary widely based on building design and maintenance."
         }
       },
@@ -227,7 +227,7 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Air Conditioning",
-          "point": "3",
+          "point": "1",
           "feedback":"While air conditioning systems can provide rapid and precise cooling, they are typically the least energy-efficient option. They consume a significant amount of electricity to operate. Replace them with a heat pump should help your home to increase energy efficiency."
         },
         "option2": {
@@ -265,7 +265,7 @@
         "placeholder": "Choose",
         "option1": {
           "label": "Incandescent lamps",
-          "point": "3",
+          "point": "1",
           "feedback":"Incandescent bulbs are the least energy-efficient and produce the most heat. They convert a significant portion of the electricity they consume into heat, which can contribute to increased cooling requirements. In order to increase the energy efficiency of your home, as well as reduce costs and environmental impact, we recommend replacing incandescent lamps with LED lamps."
         },
         "option2": {
