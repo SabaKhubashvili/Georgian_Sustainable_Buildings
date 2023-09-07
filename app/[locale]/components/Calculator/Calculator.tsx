@@ -181,31 +181,32 @@ export const Calculator = () => {
   const handleSubmit = () => {
     setFeedback("");
     const allValuesHaveLength = Object.keys(values)
-      .filter((key) => {
-        if (key === "material") {
-          const insulationValue = values.insulation.value;
-          return insulationValue == "No" || insulationValue == "არა";
-        }
-        return true;
-      })
+    .filter((key) => {
+      if (key === "material") {
+        const insulationValue = values.insulation.value;
+        return insulationValue == "No" || insulationValue == "არა";
+      }
+      return true;
+    })
       .every((key) => values[key as keyof Values].value.length > 0);
-
-    if (allValuesHaveLength) {
-      const totalPoints = Object.values(values).reduce(
-        (accumulator, currentValue) => {
-          return accumulator + currentValue.point;
-        },
-        0
-      );
-      setPoints(Math.round(totalPoints / 9));
-      setFeedback("success");
-      const offset = -120;
-      const element = resultsRef.current;
-      if (element) {
-        const elementRect = element.getBoundingClientRect();
-
-        const targetScrollPosition = window.scrollY + elementRect.top + offset;
-
+      
+      if (allValuesHaveLength) {
+        const totalPoints = Object.values(values).reduce(
+          (accumulator, currentValue) => {
+            return accumulator + currentValue.point;
+          },
+          0
+          );
+          alert(totalPoints)
+          setPoints(Math.round(totalPoints / 9));
+          setFeedback("success");
+          const offset = -120;
+          const element = resultsRef.current;
+          if (element) {
+            const elementRect = element.getBoundingClientRect();
+            
+            const targetScrollPosition = window.scrollY + elementRect.top + offset;
+            
         window.scrollTo({
           top: targetScrollPosition,
           behavior: "smooth",
