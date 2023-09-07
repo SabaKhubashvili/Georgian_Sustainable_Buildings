@@ -175,7 +175,7 @@
         }
       },
       "heat": {
-        "name": "What do you use to heat your home? ",
+        "name": "Heating System:",
         "placeholder": "Choose",
         "option1": {
           "label": "Central heating system",
@@ -199,7 +199,7 @@
         }
       },
       "houseHeating": {
-        "name": "Heating System:",
+        "name": "What do you use to heat your home? ",
         "placeholder": "Choose",
         "option1": {
           "label": "Oil",

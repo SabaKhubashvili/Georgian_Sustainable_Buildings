@@ -207,10 +207,10 @@ export const Calculator = () => {
             
             const targetScrollPosition = window.scrollY + elementRect.top + offset;
             
-        window.scrollTo({
-          top: targetScrollPosition,
-          behavior: "smooth",
-        });
+            window.scrollTo({
+              top: targetScrollPosition,
+              behavior: "smooth",
+            });
       }
     } else {
       toast.error(errorT("required"));
