@@ -31,21 +31,21 @@ export const AboutUs = () => {
                     alt='about_us-1Image'
                     width={350}
                     height={314}
-                    className='xl:w-[350px] md:w-[250px] xl:h-[314px] md:h-[230px] w-full max-h-[250px]  object-cover rounded-[12px]'
+                    className='xl:w-[350px] md:w-[250px] xl:h-[314px] md:h-[230px] w-full max-h-[250px]  object-cover rounded-[11px]'
                 />
                 <Image
                     src={'/Images/About_us/Image2.webp'}
                     alt='about_us-1Image'
                     width={350}
                     height={314}
-                    className='xl:w-[350px] md:w-[250px] xl:h-[314px] md:h-[230px] w-full max-h-[250px] object-cover  rounded-[12px]'
+                    className='xl:w-[350px] md:w-[250px] xl:h-[314px] md:h-[230px] w-full max-h-[250px] object-cover  rounded-[11px]'
                 />
                 <Image
                     src={'/Images/About_us/Image-3.webp'}
                     alt='about_us-1Image'
                     width={350}
                     height={314}
-                    className='xl:w-[350px] md:w-[250px] xl:h-[314px] md:h-[230px] w-full max-h-[250px]  object-cover lg:rounded-r-[12px] rounded-[12px]'
+                    className='xl:w-[350px] md:w-[250px] xl:h-[314px] md:h-[230px] w-full max-h-[250px]  object-cover lg:rounded-r-[12px] rounded-[11px]'
                 />
             </div>
         </Container>
