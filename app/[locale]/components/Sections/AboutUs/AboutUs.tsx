@@ -27,7 +27,7 @@ export const AboutUs = () => {
         <Container rightSpace={isAboveLargeScreens}>
             <div className='w-full flex lg:justify-end justify-center lg:items-end gap-[40px] lg:flex-nowrap flex-wrap '>
                 <Image
-                    src={'/Images/About_us/Image1.webp'}
+                    src={'/Images/About_us/AboutImage1.webp'}
                     alt='about_us-1Image'
                     width={350}
                     height={314}
